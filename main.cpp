@@ -1,6 +1,13 @@
-#include <iostream>
+#include "UserInterface.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    UserInterface startPro;
+    // Display a welcome message at the start
+    startPro.displayWelcome();
+
+    startPro.startProgram();
+
     return 0;
 }
