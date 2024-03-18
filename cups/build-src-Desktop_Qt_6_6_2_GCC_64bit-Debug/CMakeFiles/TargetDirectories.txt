@@ -1,0 +1,3 @@
+/home/magud23/workspace/cups/build-src-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/Cups.dir
+/home/magud23/workspace/cups/build-src-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/magud23/workspace/cups/build-src-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
