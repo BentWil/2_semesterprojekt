@@ -20,23 +20,28 @@ int main(int argc,char** argv){
 
 
     std::vector<Vec> positions = pyramid(cup_h,grip_h,cup_d,base_p);
-
+   
+    std::vector<Vec> bunke = pile(grip_h,cup_count, pile_diff);
+   
     std::cout<< "Builds: ";
-    for(int i = 0; i<positions.size();i++)
+    for(int i = 0; i< cup_count;i++)
     {
         positions[i].print();
+        
+        bunke[i].print();
+        std::cout << std::endl;
     }
     std::cout  << std::endl;
 
 
-    positions = pile(grip_h,cup_count, pile_diff);
-
+  
+/*
     std::cout<< "From: ";
-        for(int i = positions.size()-1; i>=0;i--)
+        for(int i = 0; i < cup_count; i++)
     {
         positions[i].print();
     }
-    std::cout  << std::endl;
+    std::cout  << std::endl;*/
 
 
 }
