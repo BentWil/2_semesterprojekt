@@ -5,7 +5,7 @@ project(ProofOfConcept LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(ProofOfConcept main.cpp initMagVM.h)
+add_executable(ProofOfConcept main.cpp gripper.h)
 
 include(GNUInstallDirs)
 install(TARGETS ProofOfConcept

@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d679e2384918fdc7e015.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ProofOfConcept",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ProofOfConcept::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ProofOfConcept-Debug-3be01f5e834bd06b2724.json",
+					"name" : "ProofOfConcept",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug",
+		"source" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/ProofOfConcept"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -124,7 +124,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "initMagVM.h",
+			"path" : "gripper.h",
 			"sourceGroupIndex" : 1
 		}
 	],

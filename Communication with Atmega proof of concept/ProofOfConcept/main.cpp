@@ -10,24 +10,18 @@
 #include <termios.h> // Contains POSIX terminal control definitions
 #include <unistd.h> // write(), read(), close()
 
-#include "initMagVM.h"
+#include "gripper.h"
 
 using namespace std;
 
 int main()
 {
-    int serial_port = initMagVM();
 
-    if(serial_port == 1){
-        std::cout << "error while init\n";
-        return 1;
-    }
+    Gripper bigbert;
 
 
-    // Write to serial port
-    unsigned char msg[] = {'e'};
-    write(serial_port, msg, sizeof(msg));
 
+    bigbert.gClose();
 
 
     // // Allocate memory for read buffer, set size according to your needs
@@ -52,14 +46,6 @@ int main()
     // // Here we assume we received ASCII data, but you might be sending raw bytes (in that case, don't try and
     // // print it to the screen like this!)
     // printf("Read %i bytes. Received message: %s", num_bytes, read_buf);
-
-
-
-
-    close(serial_port);
-
-
-
 
     return 0;
 }
