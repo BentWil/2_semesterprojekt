@@ -15,14 +15,8 @@
 
 
 int initMagVM(){
-
-    
-    
-    
   // Open the serial port. Change device path as needed (currently set to an standard FTDI USB-UART cable type device)
   int serial_port = open("/dev/ttyUSB0", O_RDWR);       // !! check filnavn i terminal med: ls -l /dev/ttyUSB* /dev/ttyACM* (den foreslår den rigtige port)!!
-
-
 
   // Create new termios struct, we call it 'tty' for convention
   struct termios tty;
@@ -66,8 +60,12 @@ int initMagVM(){
       return 1;
   }
 
+  return serial_port;
+
+  /*
+
   // Write to serial port
-  unsigned char msg[] = { 'H', 'e', 'l', 'l', 'o', '\r' };
+  unsigned char msg[] = { 'e' };
   write(serial_port, msg, sizeof(msg));
 
   // Allocate memory for read buffer, set size according to your needs
@@ -94,8 +92,10 @@ int initMagVM(){
   printf("Read %i bytes. Received message: %s", num_bytes, read_buf);
 
 
-  //  close(serial_port);
-  std::cout << "init\n";
+  close(serial_port);
+
+  */
+
 
   return 0; // success
 
