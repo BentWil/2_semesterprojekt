@@ -1,27 +1,24 @@
-#include <iostream>
-
-//
-#include <stdio.h>
-#include <string.h>
-
-// Linux headers
-#include <fcntl.h> // Contains file controls like O_RDWR
-#include <errno.h> // Error integer and strerror() function
-#include <termios.h> // Contains POSIX terminal control definitions
-#include <unistd.h> // write(), read(), close()
 
 #include "gripper.h"
-
-using namespace std;
 
 int main()
 {
 
-    Gripper bigbert;
+    Gripper bigbertha;
+    bigbertha.gOpen();
 
 
 
-    bigbert.gClose();
+
+
+
+
+
+
+
+ 
+
+
 
 
     // // Allocate memory for read buffer, set size according to your needs

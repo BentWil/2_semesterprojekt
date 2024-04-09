@@ -110,7 +110,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -124,7 +125,12 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "initMagVM.h",
+			"path" : "gripper.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gripperDummy.h",
 			"sourceGroupIndex" : 1
 		}
 	],

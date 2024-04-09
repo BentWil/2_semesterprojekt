@@ -62,7 +62,7 @@ int initMagVM(){
 
   return serial_port;
 
-  /*
+  
 
   // Write to serial port
   unsigned char msg[] = { 'e' };
@@ -94,7 +94,7 @@ int initMagVM(){
 
   close(serial_port);
 
-  */
+
 
 
   return 0; // success
