@@ -7,7 +7,7 @@ class Vec
 public:
     Vec():ar({0, 0, 0})
     {}
-    Vec(int x, int y, int z):ar({x, y, z})
+    Vec(float x, float y, float z):ar({x, y, z})
     {}
 
 
@@ -24,6 +24,6 @@ public:
         std::cout << "(" <<ar[0] << ", " << ar[1] <<", " << ar[2] << ")";
     }
 private:
-    std::array<int,3> ar;
+    std::array<float,3> ar;
 
 };

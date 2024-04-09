@@ -7,12 +7,12 @@
     
  int main()
  {   
-    	int grip_h = 5;
-    	int pile_diff = 3;
-    	int cupn = 40;
-	int cuph = 8;
-	int cupd = 5;
-	int cupspace = 2;
+    	float grip_h = 0.05;
+    	float pile_diff = 0.03;
+    	int cupn = 14;
+	float cuph = 0.08;
+	float cupd = 0.05;
+	float cupspace = 0.02;
     
     std::vector<Vec> positions = pyramidAllCups();
    

@@ -5,49 +5,21 @@
 
 std::vector<Vec> pyramidAllCups()
 {
-
-
-	int cupn = 40;
-	int cuph = 8;
-	int cupd = 5;
-	int cupspace = 2;
-	
-	int base = 0;
-	int upper = 0;
-	
+//Define variables
+	//Cups information
+	int cupn = 14;
+	float cuph = 0.08;
+	float cupd = 0.05;
+	float cupspace = 0.02;
 	int a = cupn;
 	int b = cupn;
 	int c = cupn;
 	
-//basen vil stige, hvis der kommer for mange kopper til at færdiggøre et tårn starte med det mindste tårn af 3 kopper
-	if (a > 2)
-	{
-		upper = 1;
-		base = 2;
-		a = a - 3;
-	}
+	//Cups in pyramid
+	int base = 0;
+	int upper = 0;
 	
-	for (int i = 3; i <= a; i++)	//hvis der er flere kopper tilovers bygges der en hel side mere til et helt tårn
-	{
-		base = base + 1;
-		upper = (base*(base + 1))/2 - base;
-		a = a - i;
-	}
-	
-	for (int i = 1; i <= a; i++)	//hvis der er enkelte tilbage som ikke er nok til at færdiggøre et tårn
-	{
-		base = base + 1;
-		a = a - 1;
-		
-		
-		if ((a != 0) || (a < base))
-		{
-			upper = upper + a;
-			a = 0;
-		}
-	}
 
-//finde antal kopper på resten af lagene	
 	int count = 0;
 	int row;
 	int setCup = 0;
@@ -56,85 +28,110 @@ std::vector<Vec> pyramidAllCups()
 	float y = 0;
 	float z = 0;
 	
+	//Vectors
 	Vec reference(0,0,0);
 	Vec rowstart =  reference;
 	Vec xshift(cupd + cupspace,0,0);
 	Vec layershift((cupd + cupspace)/2, 0, cuph);
 	std::vector<Vec> list;
-
-	while (b > 0)
+	
+	Vec placehere = rowstart;
+	
+	//Only one cup
+	if (a == 1)
 	{
-		row = base - count;
-		count++;
-		b = b - row;
-		
-		cupInLine = c - (b + setCup);
-		
-		setCup = setCup + row;
-
-//Sidste antal kopper i sidste række, hvis det ikke går op
-		if (b < 0)
-		{
-			cupInLine = b + cupInLine;
-		}
-		
-		//std::cout << "Row: " << row << ". Cups left after this line: " << b << ". Cups in line: " << cupInLine << std::endl;
-
-//koordinater
-		Vec placehere = rowstart;
-		
-
-//få sat koordinater på
+		base = 1;
+		a = a - 1;
+		cupInLine = 1;
+	
 		for(int i = 0; i < cupInLine; i++)
 		{	
-			
-			
-			
 			list.push_back(placehere);
-			
-			//std::cout << "coordinates: ";
-			//placehere.print();			
-			//std::cout << ". Number cup in line: " << i + 1 << std::endl;
-			
 			placehere.move(xshift);   //placehere += cupd + cupspace;		
-			
-			
-			
-			
-			
-			/*
-			
-			x = (cupd * i);
-			if (i > 0)
-			{
-				x = x + (i*2.5);
-			}
-			
-			while(b > 0)
-			{
-				coor.push_back(x);
-			}
-			
-			for (unsigned int q = 0; q < coor.size(); q++)
-			{
-				
-			}*/
 		}
 		
-		//efter hver række, flyttes starten på næste række
+		//Check high in z-axis
 		rowstart.move(layershift);
-		
-		
 	}
 	
-/*koordinater til kopperne
-	std::cout << "upper: " << upper << "\n";
-	std::cout << "base: " << base << "\n";
-	std::cout << "cups left: " << a << "\n";
-	std::cout << "cups start: " << cupn << "\n";*/
+	//Only two cups
+	if (a == 2)
+	{
+		base = 2;
+		a = a - 2;
+		cupInLine = 2;
+		
+		for(int i = 0; i < cupInLine; i++)
+		{	
+			list.push_back(placehere);
+			placehere.move(xshift);   //placehere += cupd + cupspace;		
+		}
+		
+		//Check high in z-axis
+		rowstart.move(layershift);
+	}
 	
+	//Making the smallest tower possible
+	if (a > 2)
+	{
+		upper = 1;
+		base = 2;
+		a = a - 3;
 	
+		//Chech if a biggere complet tower can be builded with the remaining cups
+		for (int i = 3; i <= a; i++)
+		{
+			base = base + 1;
+			upper = (base*(base + 1))/2 - base;
+			a = a - i;
+		}
 	
+		//If a whole tower can not be builded
+		for (int i = 1; i <= a; i++)	
+		{
+			base = base + 1;
+			a = a - 1;
+		
+		
+			if ((a != 0) || (a < base))
+			{
+				upper = upper + a;
+				a = 0;
+			}
+		}	
+	
+		//Count rows and cups in rows
+		while (b > 0)
+		{
+			row = base - count;
+			count++;
+			b = b - row;
+		
+			//Cups in each row
+			cupInLine = c - (b + setCup);
+		
+			setCup = setCup + row;
+
+			//If not completed tower the rest of cups in last row
+			if (b < 0)
+			{
+				cupInLine = b + cupInLine;
+			}
+		
+			//Rowstart increace high in z-axis
+			placehere = rowstart;
+
+			//Making coordinates in x-axis
+			for(int i = 0; i < cupInLine; i++)
+			{		
+				list.push_back(placehere);
+			
+				placehere.move(xshift);   //placehere += cupd + cupspace;		
+			}
+		
+			//Shift row if needed		
+			rowstart.move(layershift);
+		}
+	}
 	return list;
-	
 }
