@@ -5,6 +5,7 @@ int main()
 {
 
     Gripper bigbertha;
+<<<<<<< HEAD
     bigbertha.gOpen();
 
 
@@ -18,6 +19,9 @@ int main()
 
  
 
+=======
+    bigbertha.gClose();
+>>>>>>> Mikro
 
 
 
