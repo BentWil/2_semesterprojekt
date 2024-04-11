@@ -19,7 +19,7 @@ public:
 
     // constructor initializes communication
     Gripper(){
-        _serialPort = open("/dev/ttyUSB0", O_RDWR);
+        _serialPort = open("/dev/ttyUSB0", O_RDWR);   // find filename with terminal command:  ls -l /dev/ttyUSB* /dev/ttyACM
 
         if(tcgetattr(_serialPort, &tty) != 0) {
             printf("Error %i from tcgetattr: %s\n", errno, strerror(errno));
