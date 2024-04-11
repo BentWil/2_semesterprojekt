@@ -1,0 +1,111 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug",
+		"source" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/ProofOfConcept"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
