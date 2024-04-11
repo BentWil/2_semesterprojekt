@@ -5,6 +5,39 @@
 			"path" : "CMakeLists.txt"
 		},
 		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/magud23/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeParseArguments.cmake"
+		},
+		{
 			"isGenerated" : true,
 			"path" : "/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
 		},

@@ -12,6 +12,27 @@
 #include <termios.h> // Contains POSIX terminal control definitions
 #include <unistd.h> // write(), read(), close()
 
+//SQL
+#include <QCoreApplication>
+#include <QtSql>
+#include <QSqlDatabase>
+
+
+
+
+
+
+// REMEMBER: change SQLpassword+username, and possibly filename for UART
+
+
+
+
+
+
+
+
+
+
 
 class Gripper{
 
@@ -19,10 +40,25 @@ public:
 
     // constructor initializes communication
     Gripper(){
-        _serialPort = open("/dev/ttyUSB0", O_RDWR);   // find filename with terminal command:  ls -l /dev/ttyUSB* /dev/ttyACM
+
+
+        // init sql
+        QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+        db.setHostName("localhost");
+        db.setDatabaseName("gripper_data");
+        db.setUserName("magud");                                     // Change to username!!!!!!!!
+        db.setPassword("oktan47Hofte47f");                           // Change to password!!!!!!!!
+        db.open();
+
+        std::cout << "Sql init done \n";
+
+        // init UART
+        _serialPort = open("/dev/ttyUSB0", O_RDWR);                 // find filename with terminal command:  ls -l /dev/ttyUSB* /dev/ttyACM
 
         if(tcgetattr(_serialPort, &tty) != 0) {
             printf("Error %i from tcgetattr: %s\n", errno, strerror(errno));
+
+            std::cout << "If error 9, remember to connect microcontroller to VM\n";
             exit (EXIT_FAILURE);
         }
 
@@ -46,7 +82,7 @@ public:
         // tty.c_oflag &= ~OXTABS; // Prevent conversion of tabs to spaces (NOT PRESENT ON LINUX)
         // tty.c_oflag &= ~ONOEOT; // Prevent removal of C-d chars (0x004) in output (NOT PRESENT ON LINUX)
 
-        tty.c_cc[VTIME] = 10;    // Wait for up to 1s (10 deciseconds), returning as soon as any data is received.
+        tty.c_cc[VTIME] = 50;    // Wait for up to 5s (50 deciseconds), returning as soon as any data is received.
         tty.c_cc[VMIN] = 0;
 
         // Set in/out baud rate to be 9600
@@ -58,6 +94,7 @@ public:
             printf("Error %i from tcsetattr: %s\n", errno, strerror(errno));
             exit (EXIT_FAILURE);
         }
+        std::cout << "UART init done \n";
     }
 
     void lightOn(){
@@ -70,10 +107,35 @@ public:
 
     void gOpen(){
         write(_serialPort, "o", sizeof("o"));
+
+
+
+
+        char read_buf [1200];
+        int n = read(_serialPort, &read_buf, sizeof(read_buf));
+        std::cout << "n: " << n;
+
+        for (int i = 0; i < n; i++)
+        {
+            std::cout << int(read_buf[i]) << " ";
+        }
+
+        std::cout << "\n";
+
     }
 
     void gClose(){
         write(_serialPort, "c", sizeof("c"));
+    }
+
+
+    void sqlTest(std::string sequence){
+        QSqlQuery query;
+
+        query.prepare("INSERT INTO data (current, sequence) VALUES (?,?);");
+        query.addBindValue(10);
+        query.addBindValue( QString::fromStdString(sequence));
+        query.exec();
     }
 
 

@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"install"
+			"install",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
@@ -25,13 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -43,6 +50,44 @@
 			[
 				{
 					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_SQL_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtSql"
 				}
 			],
 			"language" : "CXX",
@@ -50,7 +95,7 @@
 			{
 				"backtraces" : 
 				[
-					1
+					3
 				],
 				"standard" : "17"
 			},
@@ -86,6 +131,21 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.3",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
@@ -110,7 +170,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -125,6 +186,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "gripper.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "gripperDummy.h",
 			"sourceGroupIndex" : 1
 		}
 	],
