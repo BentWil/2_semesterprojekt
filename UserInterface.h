@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <string>
+#include "PickAndPlace_allCups/pyramide.h"
 
 class UserInterface {
 
@@ -38,7 +39,9 @@ public:
             std::getline(std::cin, userInput); // Get the entire line of input
 
             // Handle commands
-            if (userInput == "welcome") {
+            if(userInput =="cups"){
+                stackingCups();
+            } else if (userInput == "welcome") {
                 displayWelcome();
             } else if (userInput == "help") {
                 displayHelp();
@@ -50,6 +53,22 @@ public:
             }
         }
     }
+
+    void stackingCups(){
+    std::string userInput;
+
+    Pyramid pyramid();
+        while(true){
+            std::cout << "How do you want to stack the cups?" << std::endl;
+            std::getline(std::cin, userInput);
+
+            if(userInput == "pyramid"){
+
+                pyramid().pyramidAllCups();
+            }
+
+    }
+}
 
 };
 #endif //UNTITLED_USERINTERFACE_H
