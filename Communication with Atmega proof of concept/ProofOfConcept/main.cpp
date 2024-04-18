@@ -5,18 +5,8 @@ int main()
 {
 
     Gripper bigbertha;
-    bigbertha.gOpen();
 
-
-
-
-
-
-
-
-
-
- 
+    bigbertha.gClose();
 
 
 
