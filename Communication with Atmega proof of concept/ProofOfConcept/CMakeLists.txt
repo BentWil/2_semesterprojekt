@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 
-find_package(Qt5Sql REQUIRED)
+
 
 project(ProofOfConcept LANGUAGES CXX)
-
+find_package(Qt5Sql REQUIRED)
 
 
 
