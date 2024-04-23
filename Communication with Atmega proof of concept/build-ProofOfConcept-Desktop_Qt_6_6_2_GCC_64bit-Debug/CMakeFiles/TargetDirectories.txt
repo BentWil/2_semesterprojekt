@@ -1,7 +1,0 @@
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/ProofOfConcept.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/list_install_components.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/install.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/install/local.dir
-/home/magud23/workspace/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop_Qt_6_6_2_GCC_64bit-Debug/CMakeFiles/install/strip.dir
