@@ -9,6 +9,12 @@
 #include <chrono>
 #include <csignal>
 #include <string>
+#include <array>
+#include <vector>
+#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h>
+#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h>
+#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h>
+#include </home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER READY FOR USE/gripper.h>
 
 using namespace ur_rtde;
 using namespace ur_rtde;
@@ -26,12 +32,72 @@ void raiseFlag(int param)
 int main(){
 	// The constructor simply takes the IP address of the Robot
 	RTDEControlInterface rtde_control("192.168.1.54");
+	//Creation of varibles for Pyriamid
+	float grip_h = 0.05;
+    	float pile_diff = 0.03;
+    	int cupn = 14;
+	float cuph = 0.08;
+	float cupd = 0.05;
+	float cupspace = 0.02;
+	std::vector<Vec> positions = pyramidAllCups();
+   	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
 	
-	// First argument is the pose 6d vector followed by speed and acceleration
-	//Cup position move
-	//rtde_control.moveL({0.346, -0.017, 0.046, 0.120, 2.138, -1.267}, 0.5, 0.2);
-	
+	//Creation of varibles for FK_func
+	double sp[3]={0.5, 0.25, 0.25};
+    	double output1_data[3];
+   	double output2[3];
+    	int output1_size;
+    	
+    	//Naming Gripper
+    	Gripper bigbertha;
+    	
+    	// Initialize function 'FK_function' input arguments.
+    	// Initialize function input argument 'P'.
+    	// Call the entry-point 'FK_function'.
+    	FK_function(sp, output1_data, *(int(*)[1]) & output1_size, output2);
+    	
+	// Stack argument is the pose 6d vector followed by speed and acceleration
 	//safe position move
-	//rtde_control.moveL({0.346, -0.017, 0.233, 0.120, 2.138, -1.267}, 0.05, 0.1);
+	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+	
+	//Creation of pyramid
+	for(int i = 0; i < cupn; i++)
+    {
+  	//Above stack
+  	FK_function(bunke[i]+(0, 0, 0.17), output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	
+  	//Stack
+  	FK_function(bunke[i], output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	//Closing of gripper
+  	bigbertha.gClose();
+  	
+  	//Above stack
+  	FK_function(bunke[i]+(0, 0, 0.17), output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	
+  	//Safepoint
+  	FK_function(sp, output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	
+  	//Above point
+  	FK_function(positions[i]+(0, 0, 0.17), output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	
+  	//point
+  	FK_function(positions[i], output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	//Opening of gripper
+  	bigbertha.gOpen();
+  	
+  	//Above point
+  	FK_function(positions[i]+(0, 0, 0.17), output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+  	
+  	//Safepoint
+  	FK_function(sp, output1_data, *(int(*)[1]) & output1_size, output2);
+  	rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[2], output2[1], output2[0]}, 0.5, 0.2);
+    }
 	return 0;
 }

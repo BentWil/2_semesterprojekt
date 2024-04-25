@@ -21,8 +21,10 @@
     //std::cout << "Builds: ";
     for(int i = 0; i < cupn; i++)
     {
+        std::cout<<"cup position "<<i;
         positions[i].print();
         
+        std::cout<<" cup bunke "<<i;
         bunke[i].print();
         std::cout << std::endl;
     }
