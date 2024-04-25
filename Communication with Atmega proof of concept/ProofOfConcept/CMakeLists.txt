@@ -15,7 +15,6 @@ add_executable(ProofOfConcept main.cpp gripper.h
     gripperDummy.h )
 target_link_libraries(ProofOfConcept Qt5::Core Qt5::Sql)
 
-
 include(GNUInstallDirs)
 install(TARGETS ProofOfConcept
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
