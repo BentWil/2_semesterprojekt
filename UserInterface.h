@@ -87,6 +87,9 @@ public:
                 Pyramid(numberOfCups, cupType   ).pyramidAllCups();
             } else if(userInput == "Tower" | userInput=="2"){
 
+            } else if(userInput == "exit" | userInput == "3"){
+                std::cout << "Returning to main menu." << std::endl;
+                break;
             }
 
     }

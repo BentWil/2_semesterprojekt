@@ -15,8 +15,9 @@ public:
 
 Pyramid(int cupNum, int cupType){
 
+    int cupn = cupNum;
+
     if(cupType == 1){
-        int cupn = cupNum;
         float cuph = 0.08;
         float cupd = 0.05;
     }
@@ -50,8 +51,8 @@ Pyramid(int cupNum, int cupType){
         //Vectors
         Vec reference(0, 0, 0);
         Vec rowstart = reference;
-        Vec xshift(cupd + cupspace, 0, 0);
-        Vec layershift((cupd + cupspace) / 2, 0, cuph);
+        Vec xshift(cupd + cupSpace, 0, 0);
+        Vec layershift((cupd + cupSpace) / 2, 0, cuph);
         std::vector<Vec> list;
 
         Vec placehere = rowstart;
