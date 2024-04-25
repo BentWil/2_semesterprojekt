@@ -1,12 +1,12 @@
 
-#include "gripper.h"
+#include "gripperDummy.h"
 
 int main()
 {
 
-    Gripper bigbertha;
+    Gripper bigbertha("/dev/ttyUSB0");
 
-    bigbertha.gClose();
+    bigbertha.gClose("hollo");
 
 
     bigbertha.gOpen();
