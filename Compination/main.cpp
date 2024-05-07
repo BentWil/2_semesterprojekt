@@ -1,9 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
-#include </home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h>
-#include </home/kasper/ur_rtde/include/ur_rtde/rtde_receive_interface.h>
-#include <boost/program_options.hpp>
 #include <thread>
 #include <chrono>
 #include <csignal>
@@ -11,45 +8,54 @@
 #include <array>
 #include <vector>
 #include <algorithm>
-#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h>
-#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h>
-#include </home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h>
-#include </home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER READY FOR USE/gripperDummy.h>
+
+//Includes for control of the robot through ur_rtde
+#include "../ur_rtde/include/ur_rtde/rtde_control_interface.h"
+#include "../ur_rtde/include/ur_rtde/rtde_receive_interface.h"
+#include "../boost/program_options.hpp"
+
+//Includes for finding cup placement position
+#include "../PickAndPlace_allCups/pile.h"
+#include "../PickAndPlace_allCups/vec.h"
+#include "../PickAndPlace_allCups/pyramide.h"
+#include "../GRIPPER READY FOR USE/gripperDummy.h"
 #include <bits/stdc++.h>
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_data.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_types.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/tmwtypes.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.cpp"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h"
-#include "/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h"
+
+//Includes for matlab function, all files matlab code generator created has been included just in case.
+#include "../FK_func/fkfunc_data.h"
+#include "../FK_func/fkfunc_initialize.cpp"
+#include "../FK_func/fkfunc_initialize.h"
+#include "../FK_func/fkfunc_terminate.cpp"
+#include "../FK_func/fkfunc_types.h"
+#include "../FK_func/rt_defines.h"
+#include "../FK_func/rtGetInf.cpp"
+#include "../FK_func/rtGetInf.h"
+#include "../FK_func/rtGetNaN.h"
+#include "../FK_func/rt_nonfinite.cpp"
+#include "../FK_func/rt_nonfinite.h"
+#include "../FK_func/rtwtypes.h"
+#include "../FK_func/sqrt.cpp"
+#include "../FK_func/sqrt.h"
+#include "../FK_func/svd.cpp"
+#include "../FK_func/svd.h"
+#include "../FK_func/tmwtypes.h"
+#include "../FK_func/xaxpy.cpp"
+#include "../FK_func/xaxpy.h"
+#include "../FK_func/xdotc.cpp"
+#include "../FK_func/xdotc.h"
+#include "../FK_func/xnrm2.cpp"
+#include "../FK_func/xnrm2.h"
+#include "../FK_func/xrot.cpp"
+#include "../FK_func/xrot.h"
+#include "../FK_func/xrotg.cpp"
+#include "../FK_func/xrotg.h"
+#include "../FK_func/xswap.cpp"
+#include "../FK_func/xswap.h"
+#include "../FK_func/fkfunc.h"
+#include "../FK_func/fkfunc.cpp"
+#include "../FK_func/rtGetNaN.cpp"
+#include "../FK_func/fkfunc_terminate.h"
+#include "../FK_func/rt_nonfinite.h"
 
 using namespace ur_rtde;
 using namespace ur_rtde;

@@ -153,8 +153,54 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/limits \
- /home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h \
+ /usr/include/c++/11/limits /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
+ /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/csignal \
+ /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../ur_rtde/include/ur_rtde/rtde_control_interface.h \
  /usr/local/include/ur_rtde/rtde.h \
  /usr/local/include/ur_rtde/rtde_export.h \
  /usr/include/boost/asio/io_service.hpp \
@@ -165,14 +211,7 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
  /usr/include/boost/config/detail/select_stdlib_config.hpp \
  /usr/include/c++/11/version \
- /usr/include/boost/config/stdlib/libstdcpp3.hpp /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
+ /usr/include/boost/config/stdlib/libstdcpp3.hpp \
  /usr/include/boost/config/detail/select_platform_config.hpp \
  /usr/include/boost/config/platform/linux.hpp \
  /usr/include/boost/config/detail/posix_features.hpp \
@@ -187,18 +226,12 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/asio/detail/wrapped_handler.hpp \
  /usr/include/boost/asio/detail/bind_handler.hpp \
  /usr/include/boost/asio/associated_allocator.hpp \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/ext/concurrence.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
@@ -314,8 +347,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/boost/asio/detail/impl/throw_error.ipp \
@@ -338,8 +369,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/rpc/netdb.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
  /usr/include/boost/asio/impl/error.ipp \
  /usr/include/boost/asio/detail/mutex.hpp \
@@ -382,9 +411,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/asio/detail/service_registry.hpp \
  /usr/include/boost/asio/detail/impl/service_registry.hpp \
  /usr/include/boost/asio/detail/impl/service_registry.ipp \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
  /usr/include/boost/asio/impl/execution_context.ipp \
  /usr/include/boost/asio/detail/conditionally_enabled_event.hpp \
  /usr/include/boost/asio/detail/conditionally_enabled_mutex.hpp \
@@ -447,26 +473,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/asio/detail/scheduler_thread_info.hpp \
  /usr/include/boost/asio/detail/signal_blocker.hpp \
  /usr/include/boost/asio/detail/posix_signal_blocker.hpp \
- /usr/include/c++/11/csignal /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/boost/asio/detail/thread_group.hpp \
  /usr/include/boost/asio/impl/system_context.hpp \
  /usr/include/boost/asio/impl/system_context.ipp \
@@ -551,10 +557,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
  /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
  /usr/include/boost/config/pragma_message.hpp \
- /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
@@ -810,16 +812,14 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
  /usr/local/include/urcl/script_sender.h \
  /usr/local/include/urcl/tcp_server.h /usr/local/include/urcl/log.h \
  /usr/include/c++/11/cinttypes /usr/include/inttypes.h \
- /home/kasper/ur_rtde/include/ur_rtde/rtde_receive_interface.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../ur_rtde/include/ur_rtde/rtde_receive_interface.h \
  /usr/local/include/ur_rtde/robot_state.h /usr/include/boost/variant.hpp \
  /usr/include/boost/variant/variant.hpp /usr/include/boost/type_index.hpp \
  /usr/include/boost/type_index/stl_type_index.hpp \
@@ -1070,7 +1070,7 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/type_traits/add_pointer.hpp \
  /usr/include/boost/variant/visitor_ptr.hpp \
  /usr/include/boost/variant/bad_visit.hpp \
- /usr/include/boost/program_options.hpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../boost/program_options.hpp \
  /usr/include/boost/program_options/options_description.hpp \
  /usr/include/boost/program_options/config.hpp \
  /usr/include/boost/program_options/errors.hpp \
@@ -1303,10 +1303,10 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/program_options/detail/convert.hpp \
  /usr/include/boost/program_options/variables_map.hpp \
  /usr/include/boost/program_options/version.hpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER\ READY\ FOR\ USE/gripperDummy.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../PickAndPlace_allCups/pile.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../PickAndPlace_allCups/vec.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../PickAndPlace_allCups/pyramide.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../GRIPPER\ READY\ FOR\ USE/gripperDummy.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h \
  /usr/include/c++/11/ciso646 /usr/include/c++/11/csetjmp \
  /usr/include/setjmp.h /usr/include/c++/11/cstdarg \
@@ -1354,52 +1354,52 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/c++/11/scoped_allocator /usr/include/c++/11/typeindex \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_data.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/tmwtypes.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_types.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.cpp \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_data.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/tmwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_initialize.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_initialize.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rt_nonfinite.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_initialize.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_terminate.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_terminate.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_types.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rt_defines.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetInf.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetInf.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetInf.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetNaN.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rt_nonfinite.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rt_nonfinite.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/sqrt.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/sqrt.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/sqrt.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/svd.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/svd.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xaxpy.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xdotc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xnrm2.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrot.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrotg.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xswap.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/svd.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xaxpy.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xaxpy.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xdotc.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xdotc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xnrm2.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xnrm2.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrot.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrot.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrotg.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xrotg.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xswap.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/xswap.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rt_defines.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetNaN.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/rtGetNaN.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/Compination/../FK_func/fkfunc_terminate.h
