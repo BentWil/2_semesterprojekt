@@ -190,7 +190,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/c++/11/limits \
-  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/FK_func.cpp \
   /home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h \
   /usr/local/include/ur_rtde/rtde.h \
   /usr/local/include/ur_rtde/rtde_export.h \
@@ -1426,8 +1425,263 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/program_options/detail/parsers.hpp \
   /usr/include/boost/program_options/detail/convert.hpp \
   /usr/include/boost/program_options/variables_map.hpp \
-  /usr/include/boost/program_options/version.hpp
+  /usr/include/boost/program_options/version.hpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER\ READY\ FOR\ USE/gripperDummy.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h \
+  /usr/include/c++/11/ciso646 \
+  /usr/include/c++/11/csetjmp \
+  /usr/include/setjmp.h \
+  /usr/include/c++/11/cstdarg \
+  /usr/include/c++/11/ccomplex \
+  /usr/include/c++/11/cfenv \
+  /usr/include/c++/11/fenv.h \
+  /usr/include/fenv.h \
+  /usr/include/x86_64-linux-gnu/bits/fenv.h \
+  /usr/include/c++/11/cstdalign \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+  /usr/include/c++/11/cstdbool \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /usr/include/c++/11/ctgmath \
+  /usr/include/c++/11/cuchar \
+  /usr/include/uchar.h \
+  /usr/include/c++/11/bitset \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/bits/stl_stack.h \
+  /usr/include/c++/11/valarray \
+  /usr/include/c++/11/bits/valarray_array.h \
+  /usr/include/c++/11/bits/valarray_array.tcc \
+  /usr/include/c++/11/bits/valarray_before.h \
+  /usr/include/c++/11/bits/slice_array.h \
+  /usr/include/c++/11/bits/valarray_after.h \
+  /usr/include/c++/11/bits/gslice.h \
+  /usr/include/c++/11/bits/gslice_array.h \
+  /usr/include/c++/11/bits/mask_array.h \
+  /usr/include/c++/11/bits/indirect_array.h \
+  /usr/include/c++/11/codecvt \
+  /usr/include/c++/11/condition_variable \
+  /usr/include/c++/11/forward_list \
+  /usr/include/c++/11/bits/forward_list.h \
+  /usr/include/c++/11/bits/forward_list.tcc \
+  /usr/include/c++/11/future \
+  /usr/include/c++/11/bits/atomic_futex.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/regex \
+  /usr/include/c++/11/bits/regex_constants.h \
+  /usr/include/c++/11/bits/regex_error.h \
+  /usr/include/c++/11/bits/regex_automaton.h \
+  /usr/include/c++/11/bits/regex_automaton.tcc \
+  /usr/include/c++/11/bits/regex_scanner.h \
+  /usr/include/c++/11/bits/regex_scanner.tcc \
+  /usr/include/c++/11/bits/regex_compiler.h \
+  /usr/include/c++/11/bits/regex_compiler.tcc \
+  /usr/include/c++/11/bits/regex.h \
+  /usr/include/c++/11/bits/regex.tcc \
+  /usr/include/c++/11/bits/regex_executor.h \
+  /usr/include/c++/11/bits/regex_executor.tcc \
+  /usr/include/c++/11/scoped_allocator \
+  /usr/include/c++/11/typeindex \
+  /usr/include/c++/11/unordered_set \
+  /usr/include/c++/11/bits/unordered_set.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_data.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/tmwtypes.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_types.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.cpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h
 
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_types.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.cpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/tmwtypes.h:
+
+/usr/include/c++/11/bits/unordered_set.h:
+
+/usr/include/c++/11/unordered_set:
+
+/usr/include/c++/11/typeindex:
+
+/usr/include/c++/11/scoped_allocator:
+
+/usr/include/c++/11/bits/regex_executor.tcc:
+
+/usr/include/c++/11/bits/regex_executor.h:
+
+/usr/include/c++/11/bits/regex_compiler.tcc:
+
+/usr/include/c++/11/bits/regex_compiler.h:
+
+/usr/include/c++/11/bits/regex_scanner.h:
+
+/usr/include/c++/11/bits/regex_automaton.h:
+
+/usr/include/c++/11/bits/regex_constants.h:
+
+/usr/include/c++/11/bits/random.h:
+
+/usr/include/c++/11/bits/atomic_futex.h:
+
+/usr/include/c++/11/future:
+
+/usr/include/c++/11/bits/forward_list.tcc:
+
+/usr/include/c++/11/forward_list:
+
+/usr/include/c++/11/condition_variable:
+
+/usr/include/c++/11/codecvt:
+
+/usr/include/c++/11/bits/gslice_array.h:
+
+/usr/include/c++/11/bits/gslice.h:
+
+/usr/include/c++/11/bits/valarray_after.h:
+
+/usr/include/c++/11/bits/valarray_array.tcc:
+
+/usr/include/c++/11/bits/valarray_array.h:
+
+/usr/include/c++/11/valarray:
+
+/usr/include/c++/11/bits/stl_stack.h:
+
+/usr/include/c++/11/stack:
+
+/usr/include/c++/11/bits/stl_queue.h:
+
+/usr/include/c++/11/queue:
+
+/usr/include/c++/11/numeric:
+
+/usr/include/c++/11/bits/stl_list.h:
+
+/usr/include/c++/11/list:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/c++/11/deque:
+
+/usr/include/c++/11/bitset:
+
+/usr/include/c++/11/cuchar:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+/usr/include/x86_64-linux-gnu/bits/fenv.h:
+
+/usr/include/c++/11/fenv.h:
+
+/usr/include/c++/11/cfenv:
+
+/usr/include/c++/11/ccomplex:
+
+/usr/include/setjmp.h:
+
+/usr/include/c++/11/ciso646:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/boost/program_options/detail/parsers.hpp:
 
@@ -1472,6 +1726,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/config/no_tr1/complex.hpp:
 
 /usr/include/c++/11/math.h:
+
+/usr/include/c++/11/random:
 
 /usr/include/boost/mpl/greater_equal.hpp:
 
@@ -1546,6 +1802,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/complex:
 
 /usr/include/boost/math/special_functions/sign.hpp:
+
+/usr/include/c++/11/bits/regex.tcc:
 
 /usr/include/boost/lexical_cast/detail/inf_nan.hpp:
 
@@ -1645,6 +1903,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/preprocessor/seq/seq.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.cpp:
+
 /usr/include/boost/preprocessor/repetition/detail/for.hpp:
 
 /usr/include/boost/preprocessor/seq/for_each_i.hpp:
@@ -1715,6 +1975,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/bind/mem_fn_cc.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.cpp:
+
 /usr/include/boost/lexical_cast/detail/converter_lexical.hpp:
 
 /usr/include/boost/get_pointer.hpp:
@@ -1728,6 +1990,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/ref.hpp:
 
 /usr/include/boost/type_traits/composite_traits.hpp:
+
+/usr/include/c++/11/csetjmp:
 
 /usr/include/boost/integer_traits.hpp:
 
@@ -1780,6 +2044,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/preprocessor/iterate.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/repeat.hpp:
+
+/usr/include/c++/11/bits/valarray_before.h:
 
 /usr/include/boost/variant/detail/enable_recursive.hpp:
 
@@ -1868,8 +2134,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/mpl/front.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
-
-/usr/include/boost/mpl/fold.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
@@ -1967,6 +2231,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/boost/variant/apply_visitor.hpp:
@@ -1987,6 +2253,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/algorithm:
 
+/usr/include/c++/11/bits/mask_array.h:
+
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/boost/asio/detail/epoll_reactor.hpp:
@@ -2000,6 +2268,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/post.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/regex_automaton.tcc:
 
 /usr/include/boost/asio/execution/schedule.hpp:
 
@@ -2051,6 +2321,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/ext/aligned_buffer.h:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_data.h:
+
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/boost/range/const_iterator.hpp:
@@ -2064,6 +2336,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/detail/posix_mutex.hpp:
 
 /usr/include/boost/asio/detail/timer_queue_base.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h:
 
 /usr/include/c++/11/string:
 
@@ -2211,6 +2485,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
 
+/usr/include/c++/11/ctgmath:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
@@ -2245,6 +2521,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/is_applicable_property.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h:
+
 /usr/include/c++/11/locale:
 
 /usr/include/c++/11/csignal:
@@ -2276,6 +2554,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/execution/detail/void_receiver.hpp:
 
 /usr/include/boost/static_assert.hpp:
+
+/usr/include/c++/11/bits/indirect_array.h:
 
 /usr/include/boost/asio/ip/impl/address.ipp:
 
@@ -2325,12 +2605,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
-/usr/include/boost/mpl/iter_fold.hpp:
-
-/usr/include/boost/asio/execution/receiver_invocation_error.hpp:
-
-/usr/include/boost/asio/detail/atomic_count.hpp:
-
 /usr/include/boost/asio/detail/type_traits.hpp:
 
 /usr/include/wchar.h:
@@ -2346,6 +2620,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/boost/asio/detail/array_fwd.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
@@ -2449,6 +2725,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
+/usr/include/c++/11/cstdbool:
+
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
@@ -2537,6 +2815,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
+/usr/include/c++/11/bits/random.tcc:
+
 /usr/include/boost/asio/detail/pop_options.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
@@ -2584,6 +2864,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/container/container_fwd.hpp:
 
 /usr/include/boost/asio/detail/select_interrupter.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -2644,6 +2926,18 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/boost/date_time/special_defs.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_month.hpp:
+
+/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -2707,6 +3001,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /usr/include/boost/mpl/clear.hpp:
@@ -2743,6 +3039,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
 
+/usr/include/c++/11/bits/regex_scanner.tcc:
+
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
@@ -2775,6 +3073,14 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/version.hpp:
 
+/usr/include/boost/mpl/iter_fold.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h:
+
+/usr/include/boost/asio/execution/receiver_invocation_error.hpp:
+
+/usr/include/boost/asio/detail/atomic_count.hpp:
+
 /usr/include/boost/predef/architecture/x86/64.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
@@ -2797,6 +3103,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/new:
 
+/usr/include/c++/11/regex:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
@@ -2812,6 +3120,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/asm-generic/types.h:
 
 /usr/local/include/ur_rtde/robot_state.h:
+
+/usr/include/boost/asio/detail/thread_group.hpp:
 
 /usr/include/c++/11/iosfwd:
 
@@ -2836,18 +3146,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/boost/preprocessor/control/if.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/usr/include/boost/date_time/special_defs.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_month.hpp:
-
-/usr/include/boost/preprocessor/seq/detail/is_empty.hpp:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
 /usr/include/boost/asio/detail/std_fenced_block.hpp:
 
@@ -2959,6 +3257,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/asm-generic/errno.h:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/local/include/ur_rtde/rtde.h:
@@ -3061,6 +3361,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/cstring:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h:
+
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
@@ -3133,6 +3435,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h:
+
 /usr/include/boost/config/detail/select_platform_config.hpp:
 
 /usr/include/boost/asio/basic_socket.hpp:
@@ -3188,8 +3492,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
-
-/usr/include/boost/asio/detail/thread_group.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -3437,6 +3739,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/type_traits/is_integral.hpp:
 
+/usr/include/c++/11/bits/regex.h:
+
 /usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/type_traits/add_reference.hpp:
@@ -3456,8 +3760,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/preprocessor/repetition/for.hpp:
 
 /usr/include/boost/date_time/year_month_day.hpp:
-
-/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/FK_func.cpp:
 
 /usr/include/boost/date_time/gregorian/greg_weekday.hpp:
 
@@ -3629,6 +3931,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/lambda_spec.hpp:
 
+/usr/include/c++/11/bits/slice_array.h:
+
 /usr/include/boost/mpl/same_as.hpp:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -3797,6 +4101,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
+/usr/include/uchar.h:
+
 /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
 
 /usr/include/boost/asio/detail/impl/epoll_reactor.ipp:
@@ -3814,6 +4120,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp:
 
 /usr/include/boost/mpl/integral_c.hpp:
+
+/usr/include/c++/11/bits/regex_error.h:
 
 /usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
 
@@ -3836,6 +4144,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/sched.h:
 
 /usr/include/boost/mpl/times.hpp:
+
+/usr/include/c++/11/bits/forward_list.h:
 
 /usr/include/boost/asio/ip/basic_resolver_results.hpp:
 
@@ -3905,6 +4215,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/ip/address.hpp:
 
+/usr/include/c++/11/cstdalign:
+
 /usr/include/boost/asio/ip/address_v4.hpp:
 
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
@@ -3973,6 +4285,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/variant/detail/enable_recursive_fwd.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h:
+
 /usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
@@ -4020,6 +4334,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/atomic:
 
 /usr/include/boost/blank_fwd.hpp:
+
+/usr/include/c++/11/cstdarg:
 
 /usr/include/boost/range/rend.hpp:
 
@@ -4077,6 +4393,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/move/adl_move_swap.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER\ READY\ FOR\ USE/gripperDummy.h:
+
 /usr/include/boost/mpl/aux_/iter_apply.hpp:
 
 /usr/include/boost/date_time/compiler_config.hpp:
@@ -4128,6 +4446,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/mpl/aux_/config/bcc.hpp:
 
 /usr/include/boost/mpl/aux_/iter_fold_impl.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h:
 
 /usr/include/boost/type_traits/detail/yes_no_type.hpp:
 
@@ -4185,6 +4505,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/front_fwd.hpp:
 
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.cpp:
+
 /usr/include/boost/asio/traits/execute_free.hpp:
 
 /usr/include/boost/mpl/list/aux_/clear.hpp:
@@ -4204,6 +4526,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/mpl/list/aux_/begin_end.hpp:
 
 /usr/include/boost/variant/detail/visitation_impl.hpp:
+
+/usr/include/fenv.h:
 
 /usr/include/boost/type_traits/is_array.hpp:
 
@@ -4277,6 +4601,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/core/no_exceptions_support.hpp:
 
+/usr/include/c++/11/bits/list.tcc:
+
 /usr/include/boost/mpl/logical.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
+
+/usr/include/boost/mpl/fold.hpp:

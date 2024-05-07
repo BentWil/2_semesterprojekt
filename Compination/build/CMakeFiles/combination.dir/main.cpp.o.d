@@ -154,7 +154,6 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/limits \
- /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/FK_func.cpp \
  /home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h \
  /usr/local/include/ur_rtde/rtde.h \
  /usr/local/include/ur_rtde/rtde_export.h \
@@ -1303,4 +1302,104 @@ CMakeFiles/combination.dir/main.cpp.o: \
  /usr/include/boost/program_options/detail/parsers.hpp \
  /usr/include/boost/program_options/detail/convert.hpp \
  /usr/include/boost/program_options/variables_map.hpp \
- /usr/include/boost/program_options/version.hpp
+ /usr/include/boost/program_options/version.hpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/GRIPPER\ READY\ FOR\ USE/gripperDummy.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h \
+ /usr/include/c++/11/ciso646 /usr/include/c++/11/csetjmp \
+ /usr/include/setjmp.h /usr/include/c++/11/cstdarg \
+ /usr/include/c++/11/ccomplex /usr/include/c++/11/cfenv \
+ /usr/include/c++/11/fenv.h /usr/include/fenv.h \
+ /usr/include/x86_64-linux-gnu/bits/fenv.h /usr/include/c++/11/cstdalign \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
+ /usr/include/c++/11/cstdbool \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/include/c++/11/ctgmath /usr/include/c++/11/cuchar \
+ /usr/include/uchar.h /usr/include/c++/11/bitset \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/stack /usr/include/c++/11/bits/stl_stack.h \
+ /usr/include/c++/11/valarray /usr/include/c++/11/bits/valarray_array.h \
+ /usr/include/c++/11/bits/valarray_array.tcc \
+ /usr/include/c++/11/bits/valarray_before.h \
+ /usr/include/c++/11/bits/slice_array.h \
+ /usr/include/c++/11/bits/valarray_after.h \
+ /usr/include/c++/11/bits/gslice.h \
+ /usr/include/c++/11/bits/gslice_array.h \
+ /usr/include/c++/11/bits/mask_array.h \
+ /usr/include/c++/11/bits/indirect_array.h /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/condition_variable /usr/include/c++/11/forward_list \
+ /usr/include/c++/11/bits/forward_list.h \
+ /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/future \
+ /usr/include/c++/11/bits/atomic_futex.h /usr/include/c++/11/random \
+ /usr/include/c++/11/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/regex \
+ /usr/include/c++/11/bits/regex_constants.h \
+ /usr/include/c++/11/bits/regex_error.h \
+ /usr/include/c++/11/bits/regex_automaton.h \
+ /usr/include/c++/11/bits/regex_automaton.tcc \
+ /usr/include/c++/11/bits/regex_scanner.h \
+ /usr/include/c++/11/bits/regex_scanner.tcc \
+ /usr/include/c++/11/bits/regex_compiler.h \
+ /usr/include/c++/11/bits/regex_compiler.tcc \
+ /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
+ /usr/include/c++/11/bits/regex_executor.h \
+ /usr/include/c++/11/bits/regex_executor.tcc \
+ /usr/include/c++/11/scoped_allocator /usr/include/c++/11/typeindex \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_data.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/tmwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_initialize.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_types.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetInf.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_nonfinite.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtwtypes.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/sqrt.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/svd.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xaxpy.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xnrm2.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrot.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xrotg.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xswap.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rt_defines.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.cpp \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/rtGetNaN.h \
+ /home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/fkfunc_terminate.h

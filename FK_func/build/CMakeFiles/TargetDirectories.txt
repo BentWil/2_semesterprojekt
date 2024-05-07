@@ -1,0 +1,3 @@
+/mnt/hgfs/Shared_ubuntu/Semesterprojekt/version 3 projektfunciton/build/CMakeFiles/fkfunc.dir
+/mnt/hgfs/Shared_ubuntu/Semesterprojekt/version 3 projektfunciton/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/Shared_ubuntu/Semesterprojekt/version 3 projektfunciton/build/CMakeFiles/rebuild_cache.dir

@@ -93,9 +93,11 @@ combination_EXTERNAL_OBJECTS =
 combination: CMakeFiles/combination.dir/main.cpp.o
 combination: CMakeFiles/combination.dir/build.make
 combination: /usr/local/lib/librtde.so.1.5.8
+combination: /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.3
 combination: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
 combination: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
 combination: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0
+combination: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 combination: CMakeFiles/combination.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kasper/Workplace/Exam/2_semesterprojekt/Compination/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable combination"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/combination.dir/link.txt --verbose=$(VERBOSE)

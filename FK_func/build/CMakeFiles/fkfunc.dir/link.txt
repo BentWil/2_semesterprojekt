@@ -1,0 +1,2 @@
+/usr/bin/ar qc fkfunc.a CMakeFiles/fkfunc.dir/rt_nonfinite.cpp.o CMakeFiles/fkfunc.dir/rtGetNaN.cpp.o CMakeFiles/fkfunc.dir/rtGetInf.cpp.o CMakeFiles/fkfunc.dir/fkfunc_initialize.cpp.o CMakeFiles/fkfunc.dir/fkfunc_terminate.cpp.o CMakeFiles/fkfunc.dir/fkfunc.cpp.o CMakeFiles/fkfunc.dir/svd.cpp.o CMakeFiles/fkfunc.dir/xnrm2.cpp.o CMakeFiles/fkfunc.dir/xdotc.cpp.o CMakeFiles/fkfunc.dir/sqrt.cpp.o CMakeFiles/fkfunc.dir/xaxpy.cpp.o CMakeFiles/fkfunc.dir/xrotg.cpp.o CMakeFiles/fkfunc.dir/xrot.cpp.o CMakeFiles/fkfunc.dir/xswap.cpp.o
+/usr/bin/ranlib fkfunc.a
