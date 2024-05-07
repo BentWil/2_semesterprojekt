@@ -7,10 +7,11 @@ std::vector<Vec> pyramidAllCups()
 {
 //Define variables
 	//Cups information
-	int cupn = 14;
-	float cuph = 0.08;
-	float cupd = 0.05;
+	int cupn = 10;
+	float cuph = 0.108;
+	float cupd = 0.08;
 	float cupspace = 0.02;
+	float griph = 0.08;
 	int a = cupn;
 	int b = cupn;
 	int c = cupn;
@@ -29,7 +30,7 @@ std::vector<Vec> pyramidAllCups()
 	float z = 0;
 	
 	//Vectors
-	Vec reference(0,0,0);
+	Vec reference(0,0,griph);
 	Vec rowstart =  reference;
 	Vec xshift(cupd + cupspace,0,0);
 	Vec layershift((cupd + cupspace)/2, 0, cuph);

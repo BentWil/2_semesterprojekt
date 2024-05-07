@@ -13,7 +13,7 @@ endif()
 ## Path variables
 ######################################################################
 get_filename_component(START_DIR . ABSOLUTE)
-set(MATLAB_ROOT /mnt/hgfs/Shared_ubuntu/Semesterprojekt CACHE PATH "")
+set(MATLAB_ROOT C:/Program\ Files/MATLAB/R2023a CACHE PATH "")
 if(${CMAKE_CURRENT_BINARY_DIR} STREQUAL ${CMAKE_CURRENT_SOURCE_DIR})
     set(BUILDING_IN_SOURCE_DIR TRUE)
     set(BINARY_START_DIR "${START_DIR}")
@@ -62,7 +62,7 @@ target_compile_features(fkfunc PUBLIC cxx_std_11)
 target_compile_definitions(fkfunc PRIVATE -DMODEL=fkfunc)
 target_include_directories(fkfunc PUBLIC $<BUILD_INTERFACE:${START_DIR}>
     $<INSTALL_INTERFACE:$<INSTALL_PREFIX>>
-    /mnt/hgfs/Shared_ubuntu/Semesterprojekt
+    C:/Users/kaspe/OneDrive\ -\ Syddansk\ Universitet/Dokumenter/MATLAB
     $<BUILD_INTERFACE:${MATLAB_ROOT}/extern/include>)
 target_link_libraries(fkfunc INTERFACE $<$<BOOL:${FOUND_LIBM}>:m>
     $<$<BOOL:${FOUND_LIBSTDCXX}>:stdc++>)

@@ -190,7 +190,64 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/c++/11/limits \
-  /home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/bits/parse_numbers.h \
+  /usr/include/c++/11/csignal \
+  /usr/include/signal.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/ur_rtde/include/ur_rtde/rtde_control_interface.h \
   /usr/local/include/ur_rtde/rtde.h \
   /usr/local/include/ur_rtde/rtde_export.h \
   /usr/include/boost/asio/io_service.hpp \
@@ -204,14 +261,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/config/detail/select_stdlib_config.hpp \
   /usr/include/c++/11/version \
   /usr/include/boost/config/stdlib/libstdcpp3.hpp \
-  /usr/include/unistd.h \
-  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
-  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
-  /usr/include/linux/close_range.h \
   /usr/include/boost/config/detail/select_platform_config.hpp \
   /usr/include/boost/config/platform/linux.hpp \
   /usr/include/boost/config/detail/posix_features.hpp \
@@ -228,22 +277,12 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/asio/detail/bind_handler.hpp \
   /usr/include/boost/asio/associated_allocator.hpp \
   /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/align.h \
   /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
@@ -369,10 +408,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/mutex \
-  /usr/include/c++/11/chrono \
-  /usr/include/c++/11/ratio \
-  /usr/include/c++/11/ctime \
-  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/boost/asio/detail/impl/throw_error.ipp \
@@ -400,8 +435,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/in.h \
   /usr/include/rpc/netdb.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
   /usr/include/x86_64-linux-gnu/bits/netdb.h \
   /usr/include/boost/asio/impl/error.ipp \
   /usr/include/boost/asio/detail/mutex.hpp \
@@ -444,10 +477,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/asio/detail/service_registry.hpp \
   /usr/include/boost/asio/detail/impl/service_registry.hpp \
   /usr/include/boost/asio/detail/impl/service_registry.ipp \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/boost/asio/impl/execution_context.ipp \
   /usr/include/boost/asio/detail/conditionally_enabled_event.hpp \
   /usr/include/boost/asio/detail/conditionally_enabled_mutex.hpp \
@@ -520,27 +549,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/asio/detail/scheduler_thread_info.hpp \
   /usr/include/boost/asio/detail/signal_blocker.hpp \
   /usr/include/boost/asio/detail/posix_signal_blocker.hpp \
-  /usr/include/c++/11/csignal \
-  /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
-  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
-  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
-  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
-  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /usr/include/boost/asio/detail/thread_group.hpp \
   /usr/include/boost/asio/impl/system_context.hpp \
   /usr/include/boost/asio/impl/system_context.ipp \
@@ -626,11 +634,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
   /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
   /usr/include/boost/config/pragma_message.hpp \
-  /usr/include/c++/11/algorithm \
-  /usr/include/c++/11/bits/stl_algo.h \
-  /usr/include/c++/11/bits/algorithmfwd.h \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
   /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
   /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
@@ -898,9 +901,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
@@ -910,7 +910,7 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/local/include/urcl/log.h \
   /usr/include/c++/11/cinttypes \
   /usr/include/inttypes.h \
-  /home/kasper/ur_rtde/include/ur_rtde/rtde_receive_interface.h \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/ur_rtde/include/ur_rtde/rtde_receive_interface.h \
   /usr/local/include/ur_rtde/robot_state.h \
   /usr/include/boost/variant.hpp \
   /usr/include/boost/variant/variant.hpp \
@@ -1177,7 +1177,7 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
   /usr/include/boost/type_traits/add_pointer.hpp \
   /usr/include/boost/variant/visitor_ptr.hpp \
   /usr/include/boost/variant/bad_visit.hpp \
-  /usr/include/boost/program_options.hpp \
+  /home/kasper/Workplace/Exam/2_semesterprojekt/boost/program_options.hpp \
   /usr/include/boost/program_options/options_description.hpp \
   /usr/include/boost/program_options/config.hpp \
   /usr/include/boost/program_options/errors.hpp \
@@ -1731,8 +1731,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/greater_equal.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
-
 /usr/include/boost/mpl/less_equal.hpp:
 
 /usr/include/boost/mpl/greater.hpp:
@@ -2025,7 +2023,7 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/program_options/options_description.hpp:
 
-/usr/include/boost/program_options.hpp:
+/home/kasper/Workplace/Exam/2_semesterprojekt/boost/program_options.hpp:
 
 /usr/include/boost/variant/bad_visit.hpp:
 
@@ -2135,62 +2133,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/c++/11/chrono:
-
-/usr/include/boost/mpl/protect.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/boost/mpl/vector/aux_/iterator.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
-
-/usr/include/boost/program_options/cmdline.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/epoll.h:
-
-/usr/include/boost/mpl/vector.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/boost/asio/detail/limits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/arpa/inet.h:
-
-/usr/include/boost/program_options/detail/convert.hpp:
-
-/usr/include/boost/math/tools/promotion.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/boost/asio/detail/mutex.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/boost/preprocessor/cat.hpp:
-
-/usr/include/boost/concept/usage.hpp:
-
-/usr/include/net/if.h:
-
-/usr/include/c++/11/tuple:
-
-/usr/include/boost/asio/detail/scheduler_operation.hpp:
-
-/usr/include/boost/date_time/adjust_functors.hpp:
-
-/usr/include/boost/type_traits/is_default_constructible.hpp:
-
-/usr/include/boost/asio/detail/signal_blocker.hpp:
-
 /usr/include/x86_64-linux-gnu/sys/timerfd.h:
 
 /usr/include/boost/type_traits/function_traits.hpp:
@@ -2198,6 +2140,12 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/detail/timer_queue_set.hpp:
 
 /usr/include/boost/mpl/less.hpp:
+
+/usr/include/boost/concept/usage.hpp:
+
+/usr/include/net/if.h:
+
+/usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/sys/un.h:
 
@@ -2245,12 +2193,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/signal.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/boost/asio/detail/impl/socket_ops.ipp:
-
 /usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/bits/mask_array.h:
@@ -2258,6 +2200,12 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/boost/asio/detail/epoll_reactor.hpp:
+
+/usr/include/boost/asio/detail/limits.hpp:
+
+/usr/include/boost/mpl/vector.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/boost/asio/detail/impl/scheduler.ipp:
 
@@ -2267,17 +2215,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/post.hpp:
 
-/usr/include/c++/11/bits/vector.tcc:
+/usr/include/arpa/inet.h:
 
-/usr/include/c++/11/bits/regex_automaton.tcc:
-
-/usr/include/boost/asio/execution/schedule.hpp:
-
-/home/kasper/ur_rtde/include/ur_rtde/rtde_receive_interface.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/boost/asio/detail/object_pool.hpp:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /usr/include/asm-generic/ioctls.h:
 
@@ -2311,13 +2251,13 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/boost/asio/detail/executor_op.hpp:
-
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
-
 /usr/include/boost/asio/traits/submit_free.hpp:
+
+/usr/include/boost/program_options/detail/convert.hpp:
+
+/usr/include/boost/math/tools/promotion.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
 
@@ -2335,6 +2275,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/detail/posix_mutex.hpp:
 
+/usr/include/boost/asio/detail/mutex.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
 /usr/include/boost/asio/detail/timer_queue_base.hpp:
 
 /home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/vec.h:
@@ -2345,17 +2289,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/rpc/netdb.h:
 
-/usr/include/c++/11/bits/predefined_ops.h:
-
 /usr/include/asm-generic/sockios.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/boost/mpl/iterator_category.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/sys/ioctl.h:
 
 /usr/include/boost/asio/traits/require_free.hpp:
 
@@ -2366,6 +2302,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/ur_rtde/include/ur_rtde/rtde_control_interface.h:
 
 /usr/include/boost/range/detail/safe_bool.hpp:
 
@@ -2389,14 +2329,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/include_preprocessed.hpp:
 
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/boost/asio/execution/occupancy.hpp:
-
-/usr/include/boost/date_time/gregorian_calendar.hpp:
-
-/usr/include/c++/11/ctime:
-
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
@@ -2414,8 +2346,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/execution/impl/receiver_invocation_error.ipp:
 
 /usr/include/boost/cerrno.hpp:
-
-/usr/include/boost/asio/handler_invoke_hook.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
@@ -2438,8 +2368,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/asm/socket.h:
-
-/usr/include/boost/asio/traits/prefer_member.hpp:
 
 /usr/include/boost/asio/prefer.hpp:
 
@@ -2525,10 +2453,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/locale:
 
-/usr/include/c++/11/csignal:
-
-/usr/include/boost/asio/traits/connect_free.hpp:
-
 /usr/include/boost/asio/traits/connect_member.hpp:
 
 /usr/include/boost/math/policies/policy.hpp:
@@ -2573,6 +2497,12 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/detail/is_executor.hpp:
 
+/usr/include/c++/11/bits/regex_automaton.tcc:
+
+/usr/include/boost/asio/execution/schedule.hpp:
+
+/usr/include/c++/11/bits/vector.tcc:
+
 /usr/include/boost/asio/socket_base.hpp:
 
 /usr/include/boost/asio/traits/execute_member.hpp:
@@ -2605,7 +2535,105 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/stl_heap.h:
 
+/usr/include/boost/mpl/iter_fold.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h:
+
+/usr/include/boost/asio/execution/receiver_invocation_error.hpp:
+
+/usr/include/boost/asio/detail/atomic_count.hpp:
+
+/usr/include/boost/asio/detail/memory.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/boost/asio/execution/execute.hpp:
+
+/usr/include/boost/asio/execution/sender.hpp:
+
+/usr/include/boost/mpl/if.hpp:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/boost/asio/ip/tcp.hpp:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/boost/mpl/aux_/config/lambda.hpp:
+
+/usr/include/c++/11/bit:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/boost/core/use_default.hpp:
+
+/usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/random.tcc:
+
+/usr/include/boost/asio/detail/pop_options.hpp:
+
 /usr/include/boost/asio/detail/type_traits.hpp:
+
+/usr/include/c++/11/cstdbool:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/boost/asio/query.hpp:
+
+/usr/include/boost/mpl/size_t_fwd.hpp:
+
+/usr/include/boost/asio/execution/set_value.hpp:
+
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/boost/asio/async_result.hpp:
+
+/usr/include/boost/mpl/aux_/config/eti.hpp:
+
+/usr/include/boost/version.hpp:
+
+/usr/include/boost/asio/traits/static_query.hpp:
+
+/usr/include/boost/mpl/vector/aux_/clear.hpp:
+
+/usr/include/c++/11/cwchar:
+
+/usr/include/boost/config/helper_macros.hpp:
+
+/usr/include/boost/config/detail/posix_features.hpp:
+
+/usr/include/c++/11/iterator:
+
+/usr/include/boost/preprocessor/arithmetic/add.hpp:
+
+/usr/include/boost/asio/detail/reactor.hpp:
+
+/usr/include/boost/config/platform/linux.hpp:
+
+/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
+
+/usr/include/c++/11/ctime:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/include/boost/asio/basic_socket.hpp:
+
+/usr/include/boost/mpl/aux_/push_front_impl.hpp:
+
+/usr/include/boost/asio/detail/impl/timer_queue_ptime.ipp:
+
+/usr/include/boost/program_options/parsers.hpp:
+
+/usr/include/boost/asio/execution/detail/as_invocable.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
 /usr/include/wchar.h:
 
@@ -2616,6 +2644,14 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/io_context.hpp:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
+
+/usr/include/boost/mpl/always.hpp:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/boost/move/detail/std_ns_begin.hpp:
+
+/usr/include/boost/variant/detail/over_sequence.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -2637,12 +2673,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/locale_classes.h:
 
-/usr/include/boost/config/detail/posix_features.hpp:
-
-/usr/include/c++/11/iterator:
-
-/usr/include/boost/preprocessor/arithmetic/add.hpp:
-
 /usr/include/boost/date_time/date_clock_device.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
@@ -2659,21 +2689,17 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
-/usr/include/c++/11/bit:
-
-/usr/include/boost/mpl/always.hpp:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/boost/move/detail/std_ns_begin.hpp:
-
-/usr/include/boost/variant/detail/over_sequence.hpp:
-
 /usr/include/boost/asio/execution/detail/as_receiver.hpp:
 
 /usr/include/boost/asio/detail/thread_context.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/libintl.h:
 
 /usr/include/boost/asio/detail/work_dispatcher.hpp:
 
@@ -2691,23 +2717,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/boost/asio/detail/is_buffer_sequence.hpp:
-
-/usr/include/boost/asio/detail/event.hpp:
-
-../main.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+/usr/include/boost/asio/detail/scheduler_operation.hpp:
 
 /usr/include/boost/asio/detail/date_time_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
-
-/usr/include/boost/asio/detail/thread.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/boost/asio/deadline_timer.hpp:
 
@@ -2724,42 +2736,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/include/c++/11/cstdbool:
-
-/usr/include/x86_64-linux-gnu/bits/socket.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
-/usr/include/libintl.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/boost/asio/query.hpp:
-
-/usr/include/boost/mpl/size_t_fwd.hpp:
-
-/usr/include/boost/asio/execution/set_value.hpp:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/boost/asio/async_result.hpp:
-
-/usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/boost/mpl/aux_/config/lambda.hpp:
-
-/usr/include/boost/variant/detail/std_hash.hpp:
-
-/usr/include/boost/asio/system_context.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/ioctls.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/boost/mpl/aux_/arity.hpp:
-
-/usr/include/c++/11/bits/ios_base.h:
 
 /usr/include/boost/asio/detail/tss_ptr.hpp:
 
@@ -2781,7 +2757,29 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/range_access.h:
 
+/usr/include/boost/mpl/iterator_category.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/boost/asio/execution/context.hpp:
+
+/usr/include/boost/asio/detail/wrapped_handler.hpp:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/include/boost/asio/execution.hpp:
+
+/usr/include/c++/11/thread:
+
+/usr/include/x86_64-linux-gnu/sys/poll.h:
+
+/usr/include/boost/asio/execution/detail/bulk_sender.hpp:
+
 /usr/include/boost/asio/require.hpp:
+
+/usr/include/c++/11/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -2811,13 +2809,11 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/boost/asio/traits/prefer_member.hpp:
+
 /usr/include/boost/asio/execution/prefer_only.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/11/bits/random.tcc:
-
-/usr/include/boost/asio/detail/pop_options.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
@@ -2837,6 +2833,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/cstdint:
 
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/boost/asio/detail/impl/socket_ops.ipp:
+
 /usr/include/boost/preprocessor/arithmetic/mod.hpp:
 
 /usr/include/c++/11/functional:
@@ -2849,6 +2849,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/debug/debug.h:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
+
 /usr/include/features-time64.h:
 
 /usr/include/c++/11/system_error:
@@ -2859,26 +2863,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/has_type.hpp:
 
-/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
-
-/usr/include/boost/container/container_fwd.hpp:
-
-/usr/include/boost/asio/detail/select_interrupter.hpp:
-
-/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/boost/asio/detail/scheduler_thread_info.hpp:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/include/boost/asio/execution.hpp:
-
-/usr/include/boost/asio/detail/wrapped_handler.hpp:
-
-/usr/include/c++/11/thread:
-
 /usr/include/boost/detail/select_type.hpp:
 
 /usr/include/boost/config/detail/select_compiler_config.hpp:
@@ -2888,6 +2872,14 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/mpl/aux_/fold_impl.hpp:
 
 /usr/include/c++/11/bits/move.h:
+
+/usr/include/boost/bind/mem_fn_template.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/boost/asio/detail/service_registry.hpp:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/boost/asio/traits/bulk_execute_member.hpp:
 
@@ -2915,6 +2907,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/stdc-predef.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
 /usr/include/boost/type_traits/type_identity.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/socket.h:
@@ -2939,8 +2935,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/preprocessor/list/detail/fold_right.hpp:
 
-/usr/include/c++/11/bits/atomic_base.h:
-
 /usr/include/features.h:
 
 /usr/include/netinet/tcp.h:
@@ -2948,6 +2942,16 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/detail/impl/eventfd_select_interrupter.ipp:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/boost/asio/execution/executor.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/boost/asio/handler_invoke_hook.hpp:
 
 /usr/include/boost/asio/traits/static_require.hpp:
 
@@ -2967,23 +2971,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/lambda_support.hpp:
 
-/usr/include/x86_64-linux-gnu/sys/poll.h:
-
-/usr/include/boost/asio/execution/detail/bulk_sender.hpp:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/boost/config.hpp:
-
-/usr/include/boost/core/ref.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/sys/eventfd.h:
 
@@ -3005,9 +2995,19 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
+/usr/include/boost/asio/detail/thread.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/boost/preprocessor/cat.hpp:
+
 /usr/include/boost/mpl/clear.hpp:
 
 /usr/include/c++/11/ostream:
+
+/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/poll.h:
 
@@ -3016,6 +3016,30 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/boost/asio/execution/set_error.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/boost/asio/system_context.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
+
+/usr/include/boost/mpl/aux_/arity.hpp:
+
+/usr/include/boost/mpl/vector/aux_/pop_front.hpp:
+
+/usr/include/boost/container/container_fwd.hpp:
+
+/usr/include/boost/asio/detail/select_interrupter.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/FK_func/xdotc.cpp:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+../main.cpp:
+
+/usr/include/boost/asio/detail/is_buffer_sequence.hpp:
+
+/usr/include/boost/asio/detail/event.hpp:
 
 /usr/include/boost/asio/execution/outstanding_work.hpp:
 
@@ -3027,12 +3051,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/type_traits/conditional.hpp:
 
-/usr/include/boost/mpl/vector/aux_/clear.hpp:
-
-/usr/include/c++/11/cwchar:
-
-/usr/include/boost/asio/traits/static_query.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
@@ -3042,6 +3060,12 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/regex_scanner.tcc:
 
 /usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/boost/asio/detail/handler_cont_helpers.hpp:
+
+/usr/include/strings.h:
+
+/usr/include/boost/asio/detail/bind_handler.hpp:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -3067,20 +3091,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/begin_end_fwd.hpp:
 
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/boost/date_time/time_defs.hpp:
-
-/usr/include/boost/version.hpp:
-
-/usr/include/boost/mpl/iter_fold.hpp:
-
-/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pyramide.h:
-
-/usr/include/boost/asio/execution/receiver_invocation_error.hpp:
-
-/usr/include/boost/asio/detail/atomic_count.hpp:
-
 /usr/include/boost/predef/architecture/x86/64.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
@@ -3097,8 +3107,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/typeinfo:
 
-/usr/include/x86_64-linux-gnu/sys/epoll.h:
-
 /usr/include/c++/11/climits:
 
 /usr/include/c++/11/new:
@@ -3107,45 +3115,21 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/boost/asio/detail/concurrency_hint.hpp:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
 /usr/include/asm-generic/types.h:
 
 /usr/local/include/ur_rtde/robot_state.h:
-
-/usr/include/boost/asio/detail/thread_group.hpp:
 
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
 
+/usr/include/boost/asio/detail/executor_op.hpp:
+
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
 /usr/include/ctype.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/boost/mpl/minus.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
-
-/usr/include/endian.h:
-
-/usr/include/boost/mpl/contains_fwd.hpp:
-
-/usr/include/boost/asio/execution/blocking.hpp:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/boost/asio/detail/std_fenced_block.hpp:
 
@@ -3167,6 +3151,22 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/include/boost/asio/detail/impl/posix_mutex.ipp:
+
+/usr/include/boost/mpl/aux_/find_if_pred.hpp:
+
+/usr/include/boost/mpl/minus.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_impl.hpp:
+
+/usr/include/endian.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
 /usr/include/boost/asio/execution/scheduler.hpp:
 
 /usr/include/boost/mpl/aux_/advance_backward.hpp:
@@ -3181,35 +3181,7 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/aux_/O1_size_impl.hpp:
 
-/usr/include/boost/asio/detail/impl/epoll_reactor.hpp:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/boost/asio/detail/service_registry.hpp:
-
-/usr/include/boost/asio/detail/impl/posix_mutex.ipp:
-
-/usr/include/boost/mpl/aux_/find_if_pred.hpp:
-
-/usr/include/c++/11/bits/stl_construct.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/boost/mpl/aux_/adl_barrier.hpp:
-
-/usr/include/boost/program_options/parsers.hpp:
-
-/usr/include/boost/asio/execution/detail/as_invocable.hpp:
-
-/usr/include/boost/mpl/aux_/msvc_eti_base.hpp:
-
-/usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/strings.h:
-
-/usr/include/boost/asio/detail/bind_handler.hpp:
-
-/usr/include/boost/asio/detail/handler_cont_helpers.hpp:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
 /usr/include/boost/asio/execution/submit.hpp:
 
@@ -3219,13 +3191,13 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/detail/handler_work.hpp:
 
-/usr/include/boost/range/reverse_iterator.hpp:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/c++/11/bits/std_abs.h:
+/usr/include/c++/11/chrono:
 
-/usr/include/boost/bind/mem_fn_template.hpp:
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
+/usr/include/boost/mpl/protect.hpp:
 
 /usr/include/stdio.h:
 
@@ -3233,27 +3205,29 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/boost/asio/execution/detail/submit_receiver.hpp:
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/boost/asio/detail/concurrency_hint.hpp:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/boost/date_time/time_iterator.hpp:
 
 /usr/include/c++/11/cxxabi.h:
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/boost/asio/detail/memory.hpp:
 
 /usr/include/asm-generic/errno.h:
 
@@ -3264,8 +3238,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/local/include/ur_rtde/rtde.h:
 
 /usr/include/boost/mpl/aux_/has_size.hpp:
-
-/usr/include/c++/11/ratio:
 
 /usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
@@ -3291,6 +3263,10 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/boost/date_time/time_defs.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/c++/11/bits/concept_check.h:
@@ -3301,17 +3277,15 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/stdexcept:
 
-/usr/include/c++/11/bits/unique_ptr.h:
-
 /usr/include/string.h:
 
-/usr/include/boost/asio/execution/sender.hpp:
+/usr/include/boost/mpl/contains_fwd.hpp:
 
-/usr/include/boost/mpl/if.hpp:
+/usr/include/boost/asio/execution/blocking.hpp:
 
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
-/usr/include/boost/asio/ip/tcp.hpp:
+/usr/include/boost/preprocessor/control/if.hpp:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
@@ -3329,8 +3303,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/config/user.hpp:
 
-/usr/include/boost/asio/execution/execute.hpp:
-
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
@@ -3345,17 +3317,31 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/boost/function/function_base.hpp:
+
+/usr/include/boost/asio/basic_socket_streambuf.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
-/usr/include/boost/preprocessor/facilities/empty.hpp:
-
 /usr/include/c++/11/istream:
+
+/usr/include/boost/asio/traits/connect_free.hpp:
+
+/usr/include/c++/11/csignal:
+
+/usr/include/boost/date_time/adjust_functors.hpp:
+
+/usr/include/boost/type_traits/is_default_constructible.hpp:
+
+/usr/include/c++/11/clocale:
+
+/usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 
@@ -3368,6 +3354,8 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/smart_ptr/detail/local_counted_base.hpp:
 
 /usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+
+/usr/include/boost/asio/detail/object_pool.hpp:
 
 /usr/include/boost/mpl/aux_/advance_forward.hpp:
 
@@ -3383,19 +3371,79 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/multiple_exceptions.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+/usr/include/limits.h:
 
-/usr/include/c++/11/limits:
+/usr/include/boost/mpl/list/aux_/empty.hpp:
 
-/home/kasper/ur_rtde/include/ur_rtde/rtde_control_interface.h:
+/usr/include/boost/asio/detail/reactor_op.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/usr/include/c++/11/bits/stl_relops.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/usr/include/boost/asio/associated_allocator.hpp:
 
-/usr/include/boost/asio/execution/executor.hpp:
+/usr/include/c++/11/array:
+
+/usr/include/boost/system/detail/config.hpp:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
+
+/usr/include/boost/mpl/vector/aux_/at.hpp:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/boost/asio/execution/occupancy.hpp:
+
+/usr/include/boost/date_time/gregorian_calendar.hpp:
+
+/usr/include/boost/asio/execution/detail/submit_receiver.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/boost/core/ref.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/boost/preprocessor/facilities/empty.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/boost/variant/detail/std_hash.hpp:
+
+/usr/include/boost/mpl/vector/aux_/iterator.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/boost/program_options/cmdline.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/epoll.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/boost/mpl/list/aux_/front.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/linux/stat.h:
 
@@ -3415,83 +3463,39 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/type_traits/enable_if.hpp:
 
-/usr/include/time.h:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+/usr/include/boost/config.hpp:
 
-/usr/include/boost/mpl/list/aux_/front.hpp:
+/usr/include/c++/11/limits:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/boost/range/reverse_iterator.hpp:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/boost/asio/detail/impl/epoll_reactor.hpp:
 
 /usr/include/boost/system/detail/std_interoperability.hpp:
 
 /usr/include/boost/type_traits/is_class.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+/usr/include/x86_64-linux-gnu/sys/epoll.h:
 
-/usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp:
+/usr/include/boost/asio/detail/scheduler_thread_info.hpp:
 
-/home/kasper/Workplace/Exam/2_semesterprojekt/PickAndPlace_allCups/pile.h:
+/usr/include/boost/asio/detail/signal_blocker.hpp:
 
-/usr/include/boost/config/detail/select_platform_config.hpp:
-
-/usr/include/boost/asio/basic_socket.hpp:
-
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
-
-/usr/include/boost/asio/detail/impl/timer_queue_ptime.ipp:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/boost/asio/detail/reactor.hpp:
-
-/usr/include/boost/config/platform/linux.hpp:
-
-/usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
-
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/usr/include/boost/config/helper_macros.hpp:
-
-/usr/include/c++/11/clocale:
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/boost/asio/execution/context.hpp:
-
-/usr/include/boost/core/use_default.hpp:
-
-/usr/include/c++/11/memory:
-
-/usr/include/boost/system/detail/config.hpp:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/limits.h:
-
-/usr/include/boost/mpl/list/aux_/empty.hpp:
-
-/usr/include/boost/asio/detail/reactor_op.hpp:
-
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/boost/asio/associated_allocator.hpp:
-
-/usr/include/c++/11/array:
-
-/usr/include/boost/mpl/vector/aux_/at.hpp:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/c++/11/bits/refwrap.h:
+/usr/include/boost/asio/detail/thread_group.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -3561,12 +3565,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/asio/basic_deadline_timer.hpp:
 
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/boost/asio/traits/set_done_free.hpp:
-
-/usr/include/boost/asio/time_traits.hpp:
-
 /usr/include/boost/lexical_cast/detail/converter_numeric.hpp:
 
 /usr/include/boost/asio/detail/reactive_socket_recvfrom_op.hpp:
@@ -3592,12 +3590,6 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/boost/asio/traits/bulk_execute_free.hpp:
 
 /usr/include/boost/asio/detail/timer_queue.hpp:
-
-/usr/include/boost/function/function_base.hpp:
-
-/usr/include/boost/asio/basic_socket_streambuf.hpp:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
@@ -4139,9 +4131,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/multiplies.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
 /usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/boost/mpl/times.hpp:
 
@@ -4306,6 +4298,14 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/cinttypes:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/boost/asio/traits/set_done_free.hpp:
+
+/usr/include/boost/asio/time_traits.hpp:
+
+/home/kasper/Workplace/Exam/2_semesterprojekt/ur_rtde/include/ur_rtde/rtde_receive_interface.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -4519,9 +4519,9 @@ CMakeFiles/combination.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/boost/mpl/empty_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/include/c++/11/cstdlib:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 /usr/include/boost/mpl/list/aux_/begin_end.hpp:
 

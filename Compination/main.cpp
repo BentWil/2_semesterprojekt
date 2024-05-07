@@ -18,7 +18,9 @@
 #include "../PickAndPlace_allCups/pile.h"
 #include "../PickAndPlace_allCups/vec.h"
 #include "../PickAndPlace_allCups/pyramide.h"
-#include "../GRIPPER READY FOR USE/gripperDummy.h"
+
+//Includes for Gripper control
+#include "../GRIPPER READY FOR USE/gripper.h"
 #include <bits/stdc++.h>
 
 //Includes for matlab function, all files matlab code generator created has been included just in case.
@@ -69,89 +71,110 @@ void raiseFlag(int param)
   running = false;
 }
 
-
 int main(){
 	// The constructor simply takes the IP address of the Robot
-	//RTDEControlInterface rtde_control("192.168.1.54");
+	RTDEControlInterface rtde_control("192.168.1.53");
 	//Creation of varibles for Pyriamid
-	float grip_h = 0.05;
-    	float pile_diff = 0.03;
-    	int cupn = 14;
-	float cuph = 0.08;
-	float cupd = 0.05;
+	float grip_h = 0.08;
+    	float pile_diff = 0.011;
+    	int cupn = 10;
+	float cuph = 0.108;
+	float cupd = 0.08;
 	float cupspace = 0.02;
 	std::vector<Vec> positions = pyramidAllCups();
    	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
 	
 	//Creation of varibles for FK_func
-	double P_tmp[3] = {175, 0, 240};
-	double G_org[3] = {0, 500, 0};
-	double theta = 0;
+	double P_tmp[3] = {-0.15, 0.15, 0.240};
+	double theta = M_PI/2;
+	double theta1 = 0;
     	double outputArg1[3];
   	double outputArg2[3];
     	
-    	//Creation of varibles for frames
-    	double cf[3]={0,50,0};
-    	double sf[3]={25,25,0};
+    	//Creation of varibles for frames  // Origin er i millimeter
+    	double cf[3]={0.5,0,0};
+    	double sf[3]={0.025,0.025,0};
+    	
+    	//Lifted point
+    	Vec bp(0, 0, 0.17);
     	
     	//Naming Gripper
-    	//Gripper bigbertha;
+    	Gripper bigbertha;
     	
     	// Initialize function 'FK_function' input arguments.
     	// Initialize function input argument 'P'.
     	// Call the entry-point 'FK_function'.
-    	fkfunc(P_tmp, G_org, theta, outputArg1, outputArg2);
-    	std::cout<<outputArg1[0]/1000<<" "<<outputArg1[1]/1000<<" "<<outputArg1[2]/1000<<" "<<"output1"<<" " <<outputArg2[0]/1000<<" "<<outputArg2[1]/1000<<" "<<outputArg2[2]/1000<<" "<<"output2";
+    	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+    	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
     	
 	// Stack argument is the pose 6d vector followed by speed and acceleration
 	//safe position move
-	//rtde_control.moveL({output1_data[0], output1_data[1], -output1_data[2], output2[0], output2[1], output2[2]}, 0.05, 0.2);
-	/*
+	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
+	
 	//Creation of pyramid
 	for(int i = 0; i < cupn; i++)
     {
   	//Above stack
-  	Vec bp(0, 0, 0.17);
   	Vec bt = bunke[i]+bp;
   	
   	//Above point
   	Vec pt = positions[i]+bp;
   	
+  	//print z axis value
+  	std::cout<<"Above "<<bt.ar[2]<<" stack "<<bunke[i].ar[2]<<std::endl;
+  	
   	//Above stack
-  	Projekfunction(bt.Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Above stack"<<std::endl;
+  	fkfunc(bt.ar, sf, theta1, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	
   	//Stack
-  	Projekfunction(bunke[i].Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"stack"<<std::endl;
+  	fkfunc(bunke[i].ar, sf, theta1, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	//Closing of gripper
-  	//bigbertha.gClose();
+  	bigbertha.gClose();
   	
   	//Above stack
-  	Projekfunction(bt.Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Above stack"<<std::endl;
+  	fkfunc(bt.ar, sf, theta1, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	
   	//Safepoint
-  	Projekfunction(sp, output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Safe point"<<std::endl;
+  	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	
   	//Above point
-  	Projekfunction(pt.Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Above point"<<std::endl;
+  	fkfunc(pt.ar, cf, theta, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	
   	//point
-  	Projekfunction(positions[i].Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Point"<<std::endl;
+  	fkfunc(positions[i].ar, cf, theta, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	//Opening of gripper
-  	//bigbertha.gOpen();
+  	bigbertha.gOpen();
   	
   	//Above point
-  	Projekfunction(pt.Getarray(), output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
+  	std::cout<<"Above Point"<<std::endl;
+  	fkfunc(pt.ar, cf, theta, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.05, 0.2);
   	
   	//Safepoint
-  	Projekfunction(sp, output1_data, *(int(*)[1]) & output1_size, output2);
-  	//rtde_control.moveL({output1_data[0], output1_data[1], output1_data[2], output2[0], output2[1], output2[2]}, 0.02, 0.2);
-    }*/
+  	std::cout<<"Safepoint"<<std::endl;
+  	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
+  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.05, 0.2);
+  	
+    }
 	return 0;
 }

@@ -53,7 +53,7 @@ mxArray *emlrtMexFcnProperties()
       emlrtMxCreateString("C:\\Users\\kaspe\\OneDrive - Syddansk "
                           "Universitet\\Dokumenter\\MATLAB\\fkfunc.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739378.40370370366));
+                emlrtMxCreateDoubleScalar(739379.473275463));
   xResult =
       emlrtCreateStructMatrix(1, 1, 7, (const char_T **)&propFieldName[0]);
   emlrtSetField(xResult, 0, "Version",

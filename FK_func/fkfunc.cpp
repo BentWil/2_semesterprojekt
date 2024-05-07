@@ -58,21 +58,21 @@ static double rt_atan2d_snf(double u0, double u1)
 void fkfunc(const double P[3], const double Gorg[3], double theta,
             double outputArg1[3], double outputArg2[3])
 {
-  static const double b_a[16]{0.38479919804402762,
-                              -0.92299875118684216,
-                              0.0016977903884631427,
+  static const double b_a[16]{0.38479919804402751,
+                              -0.922998751186842,
+                              0.0016977903884631373,
                               0.0,
                               0.92300029812684414,
-                              0.38479886750604914,
-                              -0.00053030540146319994,
+                              0.38479886750604908,
+                              -0.00053030540146320568,
                               0.0,
-                              -0.000163836595445102,
-                              0.0017711221279098266,
-                              0.99999841814073775,
+                              -0.00016383659544509454,
+                              0.001771122127909824,
+                              0.99999841814073787,
                               0.0,
-                              -251.78,
-                              -240.1,
-                              -34.88,
+                              -0.25178,
+                              -0.2401,
+                              -0.03488,
                               1.0};
   static const double b_b[16]{-1.0, 0.0,  -1.2246467991473532E-16,
                               0.0,  0.0,  1.0,
@@ -80,7 +80,8 @@ void fkfunc(const double P[3], const double Gorg[3], double theta,
                               0.0,  -1.0, 0.0,
                               0.0,  0.0,  0.0,
                               1.0};
-  static const short c_b[16]{1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -137, 1};
+  static const double c_b[16]{1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0,    0.0,
+                              0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -0.137, 1.0};
   creal_T b_v;
   creal_T u;
   double B_T_EE[16];
@@ -206,10 +207,9 @@ void fkfunc(const double P[3], const double Gorg[3], double theta,
     b_tempR_tmp = a[b_i + 12];
     for (iacol_tmp = 0; iacol_tmp < 4; iacol_tmp++) {
       i = iacol_tmp << 2;
-      B_T_EE[b_i + i] = ((cth * static_cast<double>(c_b[i]) +
-                          sth * static_cast<double>(c_b[i + 1])) +
-                         tempR_tmp * static_cast<double>(c_b[i + 2])) +
-                        b_tempR_tmp * static_cast<double>(c_b[i + 3]);
+      B_T_EE[b_i + i] =
+          ((cth * c_b[i] + sth * c_b[i + 1]) + tempR_tmp * c_b[i + 2]) +
+          b_tempR_tmp * c_b[i + 3];
     }
   }
   outputArg1[0] = B_T_EE[12] / B_T_EE[15];
