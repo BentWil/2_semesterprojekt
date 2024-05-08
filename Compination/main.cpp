@@ -75,52 +75,118 @@ int main(){
 	// The constructor simply takes the IP address of the Robot
 	RTDEControlInterface rtde_control("192.168.1.53");
 	
-	//User input for varibles for pyramid
-	std::cout << "Enter grip height "; 
+	//Defining varibles for user input or standard values for use in pyramid and fk_func
 	float grip_h;
-        std::cin >> grip_h;
-        std::cout<<std::endl;
-        std::cout << "Enter pile difference "; 
 	float pile_diff;
-        std::cin >> pile_diff;
-        std::cout<<std::endl;
-	std::cout << "Enter number of cups "; 
 	int cupn;
-        std::cin >> cupn;
-        std::cout<<std::endl;
-        std::cout << "Enter cup height "; 
 	float cuph;
-        std::cin >> cuph;
-        std::cout<<std::endl;
-	std::cout << "Enter cup diameter "; 
 	float cupd;
-        std::cin >> cupd;
-        std::cout<<std::endl;
-	std::cout << "Enter space between cups "; 
 	float cupspace;
-        std::cin >> cupspace;
-        std::cout<<std::endl;
+	double sp[3];
+	double theta;
+	double theta1;
+	double outputArg1[3];
+  	double outputArg2[3];
+  	double cf[3];
+  	double sf[3];
 	
+	//User choise weather to rund the standard 10 cup program og at user defined program
+	std::cout << "Do you wish to run the standard program? Y/N"<< std::endl;
+	char choise;
+        std::cin >> choise;
+	
+	if(choise = Y or choise = y){
 	//Creation of varibles for pyramid
-	//float grip_h = 0.08;
-    	//float pile_diff = 0.011;
-    	//int cupn = 10;
-	//float cuph = 0.108;
-	//float cupd = 0.08;
-	//float cupspace = 0.02;
-	std::vector<Vec> positions = pyramidAllCups();
-   	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
+	grip_h = 0.08;
+    	pile_diff = 0.011;
+    	cupn = 10;
+	cuph = 0.108;
+	cupd = 0.08;
+	cupspace = 0.02;
 	
 	//Creation of varibles for FK_func
-	double P_tmp[3] = {-0.15, 0.15, 0.240};
-	double theta = M_PI/2;
-	double theta1 = 0;
-    	double outputArg1[3];
-  	double outputArg2[3];
-    	
-    	//Creation of varibles for frames  // Origin er i millimeter
-    	double cf[3]={0.5,0,0};
-    	double sf[3]={0.025,0.025,0};
+	sp {-0.15, 0.15, 0.240};
+	theta = M_PI/2;
+	theta1 = 0;
+	cf = {0.5,0,0};
+	sf = {0.025,0.025,0};
+	};
+	
+	if(choise = N or choise = n){
+	//User input for varibles for pyramid
+	std::cout << "All values should be in meter's" << std::endl;
+	std::cout << "Enter grip height "; 
+        std::cin >> grip_h;
+        std::cout<<std::endl;
+        
+        std::cout << "Enter pile difference "; 
+        std::cin >> pile_diff;
+        std::cout<<std::endl;
+        
+	std::cout << "Enter number of cups "; 
+        std::cin >> cupn;
+        std::cout<<std::endl;
+        
+        std::cout << "Enter cup height "; 
+        std::cin >> cuph;
+        std::cout<<std::endl;
+        
+	std::cout << "Enter cup diameter "; 
+        std::cin >> cupd;
+        std::cout<<std::endl;
+        
+	std::cout << "Enter space between cups "; 
+        std::cin >> cupspace;
+        std::cout<<std::endl;
+        
+        std::cout << "Enter x value for safepoint "; 
+        std::cin >> sp[0];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter y value for safepoint "; 
+        std::cin >> sp[1];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter z value for safepoint "; 
+        std::cin >> sp[2];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter radian value z rotation of cup frame "; 
+        std::cin >> theta;
+        std::cout<<std::endl;
+        
+        std::cout << "Enter x value for cup frame "; 
+        std::cin >> cf[0];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter y value for cup frame "; 
+        std::cin >> cf[1];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter z value for cup frame "; 
+        std::cin >> cf[2];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter radian value z rotation of stack frame "; 
+        std::cin >> theta;
+        std::cout<<std::endl;
+        
+        std::cout << "Enter x value for stack frame "; 
+        std::cin >> sf[0];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter y value for stack frame "; 
+        std::cin >> sf[1];
+        std::cout<<std::endl;
+        
+        std::cout << "Enter z value for stack frame "; 
+        std::cin >> sf[2];
+        std::cout<<std::endl;
+	};
+	
+	//call pyramid function to find all cup points
+	std::vector<Vec> positions = pyramidAllCups();
+   	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
     	
     	//Lifted point
     	Vec bp(0, 0, 0.17);
@@ -131,7 +197,7 @@ int main(){
     	// Initialize function 'FK_function' input arguments.
     	// Initialize function input argument 'P'.
     	// Call the entry-point 'FK_function'.
-    	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+    	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
     	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
     	
 	// Stack argument is the pose 6d vector followed by speed and acceleration
@@ -172,7 +238,7 @@ int main(){
   	
   	//Safepoint
   	std::cout<<"Safe point"<<std::endl;
-  	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+  	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
   	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
   	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.1, 0.2);
   	
@@ -198,7 +264,7 @@ int main(){
   	
   	//Safepoint
   	std::cout<<"Safepoint"<<std::endl;
-  	fkfunc(P_tmp, cf, theta1, outputArg1, outputArg2);
+  	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
   	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
   	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, 0.05, 0.2);
   	
