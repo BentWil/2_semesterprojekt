@@ -24,7 +24,7 @@ void open(uint8_t input){
 		PORTC |= (1<<2);		// set direction to open
 		PORTD |= 1<<5;			// turn on motor
 	
-		// only for data, could just be delay	
+		// only for data, could just be delay 	
 		for(uint8_t i = 0; i<25;i++)
 		{
 			
@@ -140,30 +140,12 @@ int main(void)
 		
 			
 		ch = UDR1;
-		if (ch == 'b'){		// turn on LED
-			PORTB |= (1<<1);
-		}
-		else if(ch == 'e'){ // turn off LED
-			PORTB &= ~(1<<1);
-		}
-		else if(ch == 'c'){		
+		
+		if (ch == 0){		
 			close(0x6e);
-		}
-		else if(ch == 'o'){		
-			open(0x8e);
-		}
-		else if (ch == 'B'){		// turn on motor (for debug)
-			PORTD |= 1<<5;
-		}
-		else if(ch == 'E'){			//turn off motor (for debug)
-			PORTD &= ~(1<<5); 
-		}
-		else if (ch == 'C'){		//close on two cups
-			close(0x50);			
-		}
-		else if(ch == 'O'){			//open for one cup
-			open(1);;
-		}
+		}else{ 	
+			open(ch);  // start op 0x
+		};
 		
     }
 }
