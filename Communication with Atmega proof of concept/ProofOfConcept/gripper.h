@@ -34,7 +34,6 @@ public:
     // constructor initializes communication
     Gripper(const char* serialPortLocation){
 
-
         // init sql
         QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("../ProofOfConcept/test.db");
@@ -74,7 +73,7 @@ public:
         // tty.c_oflag &= ~ONOEOT; // Prevent removal of C-d chars (0x004) in output (NOT PRESENT ON LINUX)
 
 
-        tty.c_cc[VTIME] = 1;    // Wait for up to 2 deciseconds, returning as soon as any data is received.
+        tty.c_cc[VTIME] = 1;    // Wait for up to 1 deciseconds, returning as soon as any data is received.
         tty.c_cc[VMIN] = 0;
 
         // Set in/out baud rate to be 9600
@@ -88,7 +87,6 @@ public:
         }
 
         std::cout << "UART init done \n";
-
     }
 
     // standard constructor if no addres is typed
