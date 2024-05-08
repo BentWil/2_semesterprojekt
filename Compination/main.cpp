@@ -74,13 +74,40 @@ void raiseFlag(int param)
 int main(){
 	// The constructor simply takes the IP address of the Robot
 	RTDEControlInterface rtde_control("192.168.1.53");
-	//Creation of varibles for Pyriamid
-	float grip_h = 0.08;
-    	float pile_diff = 0.011;
-    	int cupn = 10;
-	float cuph = 0.108;
-	float cupd = 0.08;
-	float cupspace = 0.02;
+	
+	//User input for varibles for pyramid
+	std::cout << "Enter grip height "; 
+	float grip_h;
+        std::cin >> grip_h;
+        std::cout<<std::endl;
+        std::cout << "Enter pile difference "; 
+	float pile_diff;
+        std::cin >> pile_diff;
+        std::cout<<std::endl;
+	std::cout << "Enter number of cups "; 
+	int cupn;
+        std::cin >> cupn;
+        std::cout<<std::endl;
+        std::cout << "Enter cup height "; 
+	float cuph;
+        std::cin >> cuph;
+        std::cout<<std::endl;
+	std::cout << "Enter cup diameter "; 
+	float cupd;
+        std::cin >> cupd;
+        std::cout<<std::endl;
+	std::cout << "Enter space between cups "; 
+	float cupspace;
+        std::cin >> cupspace;
+        std::cout<<std::endl;
+	
+	//Creation of varibles for pyramid
+	//float grip_h = 0.08;
+    	//float pile_diff = 0.011;
+    	//int cupn = 10;
+	//float cuph = 0.108;
+	//float cupd = 0.08;
+	//float cupspace = 0.02;
 	std::vector<Vec> positions = pyramidAllCups();
    	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
 	
