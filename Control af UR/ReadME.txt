@@ -11,6 +11,7 @@ Tiføj bruger til dialout group så man kan sende signaler til USB porte
 sudo usermod -a -G dialout <username>
 
 Sqlite skal sættes op:
+- sudo apt install sqlite
 - sudo apt install libqt5sql5-sqlite
 
 Hvis en virtuel maskine bruges skal netværkskorttet sætte til kun at være lan kortet
