@@ -1,0 +1,7 @@
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/ProofOfConcept.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/install.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/install/local.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Communication with Atmega proof of concept/build-ProofOfConcept-Desktop-Debug/CMakeFiles/install/strip.dir

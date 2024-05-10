@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/ProofOfConcept.dir/main.cpp.o -o ProofOfConcept  /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 

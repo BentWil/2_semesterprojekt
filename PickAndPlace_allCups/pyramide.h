@@ -3,15 +3,15 @@
 #include "vec.h"
 
 
-std::vector<Vec> pyramidAllCups()
+std::vector<Vec> pyramidAllCups(int cupn, float cuph, float cupd, float cupspace, float griph)
 {
 //Define variables
 	//Cups information
-	int cupn = 10;
-	float cuph = 0.108;
-	float cupd = 0.08;
-	float cupspace = 0.02;
-	float griph = 0.08;
+	//int cupn = 10;
+	//float cuph = 0.13;
+	//float cupd = 0.08;
+	//float cupspace = 0.02;
+	//float griph = 0.08;
 	int a = cupn;
 	int b = cupn;
 	int c = cupn;

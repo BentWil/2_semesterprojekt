@@ -1,0 +1,3 @@
+/home/kasper/Workplace/Exam/2_semesterprojekt/Test/build/CMakeFiles/combination.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Test/build/CMakeFiles/edit_cache.dir
+/home/kasper/Workplace/Exam/2_semesterprojekt/Test/build/CMakeFiles/rebuild_cache.dir

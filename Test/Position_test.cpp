@@ -91,7 +91,6 @@ int main(){
   	double sf[3];
   	double speed;
   	double acc;
-  	double r;
 	
 	//User choise weather to rund the standard 10 cup program og at user defined program
 	std::cout << "Do you wish to run the standard program? 1/0"<< std::endl;
@@ -102,15 +101,15 @@ int main(){
 	//Creation of varibles for pyramid
 	grip_h = 0.08;
     	pile_diff = 0.011;
-    	cupn = 10;
+    	cupn = 2;
 	cuph = 0.108;
 	cupd = 0.08;
-	cupspace = 0.02;
+	cupspace = 0;
 	
 	//Creation of varibles for FK_func
-	sp[0] = -0.25;
-	sp[1] = 0.25;
-	sp[2] = 0.450;
+	sp[0] = -0.15;
+	sp[1] = 0.15;
+	sp[2] = 0.400;
 	theta = M_PI/2;
 	theta1 = 0;
 	cf[0] = 0.4;
@@ -208,7 +207,7 @@ int main(){
    	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
     	
     	//Lifted point
-    	Vec bp(0, 0, cuph*1.25);
+    	Vec bp(0, 0, cuph*2);
     	
     	//Naming Gripper
     	Gripper bigbertha;
@@ -219,6 +218,7 @@ int main(){
     	// Initialize function 'FK_function' input arguments.
     	// Initialize function input argument 'P'.
     	// Call the entry-point 'FK_function'.
+    	
     	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
     	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
     	
@@ -234,6 +234,9 @@ int main(){
   	
   	//Above point
   	Vec pt = positions[i]+bp;
+  	
+  	//print z axis value
+  	std::cout<<"Above "<<bt.ar[2]<<" stack "<<bunke[i].ar[2]<<std::endl;
   	
   	//Above stack
   	std::cout<<"Above stack"<<std::endl;
@@ -288,81 +291,5 @@ int main(){
   	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
   	
     }
-    
-    std::cout<<"To remove the pyramid press 1 ";
-    std::cin>>r;
-    if(r == 1){
-    std::vector<Vec> positions = pyramidAllCups(cupn, cuph, cupd, cupspace, grip_h);
-   	std::vector<Vec> bunke = pile(grip_h,cupn, pile_diff);
-   	
-    std::cout<<"Test if function"<<std::endl;
-    
-    for(int n = cupn-1; n > -1; n--)
-    {
-    
-    	std::cout<<"Test for loop function"<<std::endl;
-    
-  	//Above stack
-  	Vec bt = bunke[n]+bp;
-  	
-  	//Above point
-  	Vec pt = positions[n]+bp;
-  	
-  	//Above point
-  	std::cout<<"Above point"<<std::endl;
-  	fkfunc(pt.ar, cf, theta, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	
-  	//point
-  	std::cout<<"Point "<< n <<std::endl;
-  	fkfunc(positions[n].ar, cf, theta, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	//Closing of gripper
-  	bigbertha.gClose();
-  	
-  	//Above point
-  	std::cout<<"Above Point"<<std::endl;
-  	fkfunc(pt.ar, cf, theta, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	
-  	//Safepoint
-  	std::cout<<"Safepoint"<<std::endl;
-  	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	
-  	//Above stack
-  	std::cout<<"Above stack"<<std::endl;
-  	fkfunc(bt.ar, sf, theta1, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	
-  	//Stack
-  	std::cout<<"stack"<<std::endl;
-  	fkfunc(bunke[n].ar, sf, theta1, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	//Opening of gripper
-  	bigbertha.gOpen();
-  	
-  	//Above stack
-  	std::cout<<"Above stack"<<std::endl;
-  	fkfunc(bt.ar, sf, theta1, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	
-  	//Safepoint
-  	std::cout<<"Safe point"<<std::endl;
-  	fkfunc(sp, cf, theta1, outputArg1, outputArg2);
-  	std::cout<<outputArg1[0]<<" "<<outputArg1[1]<<" "<<outputArg1[2]<<" "<<"output1"<<" " <<outputArg2[0]<<" "<<outputArg2[1]<<" "<<outputArg2[2]<<" "<<"output2"<<std::endl;
-  	rtde_control.moveL({outputArg1[0], outputArg1[1], outputArg1[2], outputArg2[0], outputArg2[1], outputArg2[2]}, speed, acc);
-  	}
-    }
-    else{
-    std::cout<<"Program ended "<<std::endl;
-    };
 	return 0;
 }

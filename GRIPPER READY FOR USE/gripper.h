@@ -23,14 +23,7 @@
 
 
 
-// REMEMBER: change SQLpassword+username, and possibly filename for UART
-
-
-
-
-
-
-
+// REMEMBER: change filename for UART
 
 
 
@@ -39,9 +32,7 @@ class Gripper{
 public:
 
     // constructor initializes communication
-    Gripper(){
-
-
+    Gripper(const char* serialPortLocation){
 
         // init sql
         QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
@@ -51,7 +42,7 @@ public:
         std::cout << "Sql init done \n";
 
         // init UART
-        _serialPort = open("/dev/ttyUSB0", O_RDWR);                 // find filename with terminal command:  ls -l /dev/ttyUSB* /dev/ttyACM
+        _serialPort = open(serialPortLocation, O_RDWR);                 // "/dev/ttyUSB0" find filename with terminal command:  ls -l /dev/ttyUSB* /dev/ttyACM
 
         if(tcgetattr(_serialPort, &tty) != 0) {
             printf("Error %i from tcgetattr: %s\n", errno, strerror(errno));
@@ -82,7 +73,7 @@ public:
         // tty.c_oflag &= ~ONOEOT; // Prevent removal of C-d chars (0x004) in output (NOT PRESENT ON LINUX)
 
 
-        tty.c_cc[VTIME] = 1;    // Wait for up to 2 deciseconds, returning as soon as any data is received.
+        tty.c_cc[VTIME] = 1;    // Wait for up to 1 deciseconds, returning as soon as any data is received.
         tty.c_cc[VMIN] = 0;
 
         // Set in/out baud rate to be 9600
@@ -96,8 +87,11 @@ public:
         }
 
         std::cout << "UART init done \n";
-
     }
+
+    // standard constructor if no addres is typed
+    Gripper(): Gripper("/dev/ttyUSB0"){};
+
 
     void lightOn(){
         write(_serialPort, "b", sizeof("a"));
@@ -109,29 +103,36 @@ public:
 
     void gOpen(){
         write(_serialPort, "o", sizeof("o"));
-        while(listen("Open"));
+        while(listen());
     }
 
     void gClose(){
         write(_serialPort, "c", sizeof("c"));
-        while(listen("Close"));
+        while(listen());
     }
 
+    void gOpen(std::string ReadingName){
+        write(_serialPort, "o", sizeof("o"));
+        while(listenAndSave(ReadingName));
+    }
 
+    void gClose(std::string ReadingName){
+        write(_serialPort, "c", sizeof("o"));
+        while(listenAndSave(ReadingName));
+    }
 
-    void sqlTest(std::string sequence){
+    void sqlTest(std::string ReadingName){
         QSqlQuery query;
-
         query.prepare("INSERT INTO data (current, sequence) VALUES (?,?);");
         query.addBindValue(10);
-        query.addBindValue( QString::fromStdString(sequence));
+        query.addBindValue( QString::fromStdString(ReadingName));
         query.exec();
     }
 
 
 
 
-    bool listen(std::string inputstring){
+    bool listenAndSave(std::string inputstring){
 
         QSqlQuery q;
         int8_t read_buf [10];
@@ -159,9 +160,22 @@ public:
         return true;
     }
 
-    bool listen(){
-        return listen("");
 
+    bool listen(){
+        int8_t read_buf [10];
+
+        int num_bytes = read(_serialPort, &read_buf, sizeof(read_buf));
+
+
+        if (num_bytes < 0) {
+            std::cerr << "Error reading UART";
+            return false;
+        }
+
+        if (0 == num_bytes){
+            return false;
+        }
+        return true;
     }
 
 

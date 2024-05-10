@@ -8,7 +8,7 @@
 
 // HAVE THIS IN CMAKE.TXT for non :
 // 		find_package(Qt5Sql REQUIRED)
-// 		target_link_libraries("projectName" Qt5::Core Qt5::Sql)
+//		target_link_libraries("projectName" Qt5::Core Qt5::Sql)
 
 
 
@@ -21,7 +21,7 @@ int main()
     bigbertha.gClose();
 
 
-    bigbertha.gOpen();
+    //bigbertha.gOpen();
 
 
     return 0;
