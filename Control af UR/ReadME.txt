@@ -7,4 +7,21 @@ Selve ur_rtde kan instaleres med:
 - sudo apt-get update
 - sudo apt install librtde librtde-dev
 
-Program til styring af roboten hedder indtil videre test.cpp og ligger under examples
+Tiføj bruger til dialout group så man kan sende signaler til USB porte
+sudo usermod -a -G dialout <username>
+
+Sqlite skal sættes op:
+- sudo apt install sqlite
+- sudo apt install libqt5sql5-sqlite
+
+
+Hvis en virtuel maskine bruges skal netværkskorttet sætte til kun at være lan kortet
+i vores tilfælde:
+Sluk VM hvis den er tændt. åbn vmplayer, gå til indstillinger for ubunto maskinen, skift fra NAT til bridged, slå alle netværk fra undtagen eathernetport, åbn vm  igen. 
+
+Der skal laves en manuel ipv 4 address som er 192.168.1.100 og 255.255.255.0
+
+
+
+
+
