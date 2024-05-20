@@ -60,7 +60,6 @@
 #include "../FK_func/rt_nonfinite.h"
 
 using namespace ur_rtde;
-using namespace ur_rtde;
 using namespace std::chrono;
 namespace po = boost::program_options;
 
@@ -100,7 +99,8 @@ int main(){
 	
 	if(choise == 1){
 	//Creation of varibles for pyramid
-	grip_h = 0.08;
+	grip_h = 0.05;
+	grip_h += 0.03;
     	pile_diff = 0.011;
     	cupn = 10;
 	cuph = 0.108;
@@ -113,7 +113,7 @@ int main(){
 	sp[2] = 0.450;
 	theta = M_PI/2;
 	theta1 = 0;
-	cf[0] = 0.4;
+	cf[0] = 0.40;
 	cf[1] = 0;
 	cf[2] = 0;
 	sf[0] = 0.025;
@@ -128,6 +128,7 @@ int main(){
 	std::cout << "All values should be in meter's" << std::endl;
 	std::cout << "Enter grip height "; 
         std::cin >> grip_h;
+        grip_h += 0.03;
         std::cout<<std::endl;
         
         std::cout << "Enter pile difference "; 
